@@ -19,8 +19,8 @@ export default function Home() {
     >
       <div className="flex-column w-4/6">
         <div className="w-full mt-26 justify-start p-4">
-          <Profiler title="Hey, I'm Yusuf Yıldırım." bio1="I'm a Web Designer, Music Artist & Photographer." bio2="I spend most of the time thinking about Tea." />
-          <SocialLinks x="#" youtube="#" linkedin="#" telegram="#" foursquare="#" />
+          <Profiler title="Hey, I'm Yusuf Yıldırım." bio1="I'm a Web Designer, Music Artist & Photographer." bio2="I spend most of the time thinking about Tea." photoUrl="/profile-photo.jpeg" />
+          <SocialLinks x="#" youtube="#" linkedin="#" email="#" foursquare="#" />
         </div>
       </div>
 
