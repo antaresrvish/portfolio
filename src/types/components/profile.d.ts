@@ -1,6 +1,5 @@
-export interface Profile {
+export interface IProfile {
     title: string;
-    bio1: string;
-    bio2: string;
+    biography: string[];
     photoUrl: string;
 }
