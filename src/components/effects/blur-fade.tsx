@@ -13,10 +13,14 @@ export const BlurFade = ({ children, delay = 0 }: { children: any, delay?: numbe
 
   return (
     <div
-      className={`transition-all duration-700 ease-out ${show
+      className={`transition-all duration-700 ease-out transform ${show
           ? 'opacity-100 blur-0 translate-y-0'
           : 'opacity-0 blur-sm translate-y-4'
         }`}
+      style={{ 
+        transform: show ? 'translateY(0)' : 'translateY(16px)',
+        filter: show ? 'blur(0)' : 'blur(4px)'
+      }}
     >
       {children}
     </div>

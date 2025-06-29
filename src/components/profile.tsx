@@ -1,7 +1,7 @@
 import { IProfile } from '@/types/components/profile';
 import { BlurFade } from './effects/blur-fade';
 
-export default function Profile({ profile }: {profile: IProfile}) {
+export default function Profile({ profile }: { profile: IProfile }) {
     const { title, biography, photoUrl } = profile;
 
     return (
@@ -10,11 +10,15 @@ export default function Profile({ profile }: {profile: IProfile}) {
                 <img src={photoUrl} alt="Profile Image" className="rounded-[15px] border-2 border-white drop-shadow-2xl/20 drop-shadow-black w-16 h-16 mb-6" />
             </BlurFade>
             <BlurFade delay={500}>
-                <span className="mt-2 md:text-xl text-lg font-medium mb-3">{title}</span>
+                <div className='mb-3 md:text-2xl text-lg font-medium'>
+                    <span>{title}</span>
+                </div>
             </BlurFade>
             {biography.map((biography, index) => (
                 <BlurFade delay={750 + index * 100} key={index}>
-                    <span className="md:text-lg text-md text-gray-600">{biography}</span>
+                    <div className="md:text-xl text-md text-gray-600">
+                        <span>{biography}</span>
+                    </div>
                 </BlurFade>
             ))}
         </div>
