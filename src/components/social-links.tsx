@@ -12,7 +12,7 @@ export default function socialLinks({ data }: { data: ISocialLinks }) {
                     const IconComponent = fa6[iconName] ? fa6[iconName] : fa6.FaQuestion;
                     return (
                         <Tooltip key={item.tooltip} text={item.tooltip}>
-                            <a href={item.link} className="text-gray-900">
+                            <a href={item.link} target="_blank" className="text-gray-900">
                                 {IconComponent && (
                                     <IconComponent className="inline-block w-5 h-5 mr-3.5" />
                                 )}

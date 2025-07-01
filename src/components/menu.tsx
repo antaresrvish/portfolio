@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useMenu } from '@/contexts/MenuContext';
 
 const menuItems = [
     { id: 'ventures', label: 'Ventures' },
@@ -9,7 +9,7 @@ const menuItems = [
 ];
 
 export default function Menu() {
-    const [activeItem, setActiveItem] = useState('ventures');
+    const { activeItem, setActiveItem } = useMenu();
 
     return (
         <nav className="flex justify-start sm:justify-start mt-20 sm:mt-20 px-0">
