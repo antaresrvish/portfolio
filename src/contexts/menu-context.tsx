@@ -1,14 +1,11 @@
 import { createContext, useContext, useState, ReactNode } from 'react';
+import { IMenuContextType } from '@/types/contexts/menu-context';
 
-type MenuContextType = {
-    activeItem: string;
-    setActiveItem: (item: string) => void;
-};
 
-const MenuContext = createContext<MenuContextType | undefined>(undefined);
+const MenuContext = createContext<IMenuContextType | undefined>(undefined);
 
 export function MenuProvider({ children }: { children: ReactNode }) {
-    const [activeItem, setActiveItem] = useState('ventures');
+    const [activeItem, setActiveItem] = useState('projects');
 
     return (
         <MenuContext.Provider value={{ activeItem, setActiveItem }}>

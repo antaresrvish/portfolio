@@ -5,7 +5,7 @@ import { ISocialLinks } from "@/types/components/social-links";
 
 export default function socialLinks({ data }: { data: ISocialLinks }) {
     return (
-        <BlurFade delay={1250}>
+        <BlurFade delay={1000}>
             <div className="flex mt-6">
                 {data.map((item) => {
                     const iconName = ("Fa" + item.icon) as keyof typeof fa6;

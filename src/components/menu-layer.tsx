@@ -1,32 +1,38 @@
-import { useMenu } from '@/contexts/MenuContext';
-import One from '@/pages/layers/one';
-import Two from '@/pages/layers/two';
-import Three from '@/pages/layers/three';
-import Four from '@/pages/layers/four';
-import Five from '@/pages/layers/five';
+import { useMenu } from '@/contexts/menu-context';
+import { BlurFade } from './effects/blur-fade';
+import { useState, useEffect, ReactNode } from 'react';
+import { IMenuLayerProps } from '@/types/components/menu-layer';
 
-export default function MenuLayer() {
+export default function MenuLayer({ layerConfig = {} }: IMenuLayerProps) {
     const { activeItem } = useMenu();
+    const [isFirstRender, setIsFirstRender] = useState(true);
+    const [initialActiveItem] = useState(activeItem);
+
+    useEffect(() => {
+        if (activeItem !== initialActiveItem) {
+            setIsFirstRender(false);
+        }
+    }, [activeItem, initialActiveItem]);
 
     const renderContent = () => {
-        switch (activeItem) {
-            case 'ventures':
-                return <One data={[
-                    {iconUrl: '/rust.png', title: 'Rust KVM', description:'Rust based key-value in memory database', photoUrl:'./test.png', link:'https://github.com/antaresrvish/rust-kvm'},
-                    {iconUrl: '/rust.png', title: 'Rust KVM', description:'Rust based key-value in memory database', photoUrl:'./test.png', link:'https://github.com/antaresrvish/rust-kvm'},
-                    {iconUrl: '/rust.png', title: 'Rust KVM', description:'Rust based key-value in memory database', photoUrl:'./test.png', link:'https://github.com/antaresrvish/rust-kvm'}
-                ]}/>;
-            case 'services':
-                return <Two />;
-            case 'clients':
-                return <Three />;
-            case 'tech-stack':
-                return <Four />;
-            case 'connect':
-                return <Five />;
-            default:
-                return <One data={[]} />;
+        const delay = isFirstRender ? 1450 : 0;
+        
+        if (layerConfig[activeItem]) {
+            return (
+                <BlurFade delay={delay} key={activeItem}>
+                    {layerConfig[activeItem].component}
+                </BlurFade>
+            );
         }
+        
+        return (
+            <BlurFade delay={delay} key="default">
+                <div className="text-center text-gray-500 py-12">
+                    <h3 className="text-xl font-medium mb-2">No Content.</h3>
+                    <p>Content for "{activeItem}" is not avalible.</p>
+                </div>
+            </BlurFade>
+        );
     };
 
     return (
