@@ -4,11 +4,12 @@ import Menu from "@/components/menu";
 import MenuLayer from "@/components/menu-layer";
 import { MenuProvider } from "@/contexts/menu-context";
 import { Outfit } from "next/font/google";
-import One from "@/pages/layers/one";
-import Two from "@/pages/layers/two";
-import Three from "@/pages/layers/three";
-import Four from "@/pages/layers/four";
-import Five from "@/pages/layers/five";
+import BlurFooter from "@/components/blur-footer";
+import One from "@/components/layers/one";
+import Two from "@/components/layers/two";
+import Three from "@/components/layers/three";
+import Four from "@/components/layers/four";
+import Five from "@/components/layers/five";
 
 const geistSans = Outfit({
   variable: "--font-geist-sans",
@@ -33,15 +34,16 @@ const portfolioData = {
     { id: 'projects', label: 'Projects' },
     { id: 'about', label: 'About' },
     { id: 'clients', label: 'Clients' },
-    { id: 'techstack', label: 'Tech Stack' }
+    { id: 'techstack', label: 'Tech Stack' },
+    { id: 'connect', label: 'Connect' }
   ],
   layerConfig: {
     'projects': {
       component: <One data={[
         { iconUrl: '/rust.png', title: 'Rust KVM', description: 'Rust based key-value in memory database', photoUrl: './test.png', link: 'https://github.com/antaresrvish/rust-kvm' },
-        { iconUrl: '/rust.png', title: 'Next.js Portfolio', description: 'Modern portfolio website', photoUrl: './test.png', link: '#' },
-        { iconUrl: '/python.png', title: 'Weather CLI', description: 'Command-line weather app in Python', photoUrl: './weather.png', link: 'https://github.com/antaresrvish/weather-cli' },
-        { iconUrl: '/node.png', title: 'Express API Boilerplate', description: 'Starter template for REST APIs', photoUrl: './express.png', link: 'https://github.com/antaresrvish/express-api-boilerplate' }
+        { iconUrl: 'https://www.svgrepo.com/show/354113/nextjs-icon.svg', title: 'Next.js Portfolio', description: 'Modern portfolio website', photoUrl: 'https://www.0xkishan.com/_next/image?url=%2Fblogs%2Fnextjs%2Fhero.png&w=3840&q=75', link: '#' },
+        { iconUrl: 'https://cdn.vectorstock.com/i/preview-1x/17/66/drawing-weather-icon-with-cloud-in-style-glass-vector-36611766.jpg', title: 'Weather CLI', description: 'Command-line weather app in Python', photoUrl: 'https://img.freepik.com/premium-vector/weather-app-ui-template-editable-vector_908119-7.jpg', link: 'https://github.com/antaresrvish/weather-cli' },
+        { title: 'Express API Boilerplate', description: 'Starter template for REST APIs', photoUrl: 'https://fiverr-res.cloudinary.com/t_main1,q_auto,f_auto/gigs/356819825/original/8571ec1bb449f4199c6081195aa763b559afd2c1.png', link: 'https://github.com/antaresrvish/express-api-boilerplate' }
       ]} />
     },
     'about': {
@@ -101,6 +103,9 @@ const portfolioData = {
         { title: "Fastify.js", photoUrl: "https://pbs.twimg.com/profile_images/970652657231847424/mWKpZoM4_400x400.jpg", url: "https://www.fastify.io" },
         { title: "C#", photoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/C_Sharp_Logo_2023.svg/1200px-C_Sharp_Logo_2023.svg.png", url: "https://learn.microsoft.com/tr-tr/dotnet/csharp/"}
       ]}/>
+    },
+    'connect': {
+      component: <Five></Five>
     }
   }
 };
@@ -120,6 +125,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <BlurFooter></BlurFooter>
     </MenuProvider>
   );
 }

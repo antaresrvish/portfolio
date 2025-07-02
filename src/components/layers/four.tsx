@@ -1,6 +1,6 @@
-import { IFour } from "@/types/pages/layers/four"
+import { IFour } from "@/types/components/layers/four"
 
-export default function Four({ data }: { data: IFour }) {
+export default function Four({ data = [] }: { data: IFour }) {
     return (
         <div className="pb-6 max-w-4xl mx-auto px-4 sm:px-6">
             <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">

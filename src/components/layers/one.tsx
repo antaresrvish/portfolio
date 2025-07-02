@@ -1,6 +1,6 @@
-import {IOne} from '@/types/pages/layers/one'
+import {IOne} from '@/types/components/layers/one'
 
-export default function One({ data }: { data: IOne}) {
+export default function One({ data = [] }: { data: IOne}) {
     return (
         <>
             {data.map((item, index) => (
@@ -8,7 +8,13 @@ export default function One({ data }: { data: IOne}) {
                     <div className="w-full flex flex-row shadow-xl/5 mb-6 shadow-black rounded-xl border border-gray-200 h-[293px]">
                         <div className="w-1/2 pl-8 pr-4 pt-8">
                             <div className="shadow-2xl/80 shadow-black w-8 h-8">
-                                <img src={item.iconUrl} alt="Icon" className="rounded-lg" />
+                                {item.iconUrl ? (
+                                    <img src={item.iconUrl} alt="Icon" className="rounded-lg" />
+                                ) : (
+                                    <div className="rounded-lg w-full h-full flex items-center justify-center border-1 border-gray-300">
+                                        <span className="text-sm text-gray-400">?</span>
+                                    </div>
+                                )}
                             </div>
                             <div className="text-xl font-medium mt-4">{item.title}</div>
                             <div className="text-sm font-normal text-gray-600 mt-2">{item.description}</div>
@@ -28,7 +34,7 @@ export default function One({ data }: { data: IOne}) {
                         </div>
                         <div className="w-1/2 flex pt-6">
                             <div className="max-w-full rounded-tl-xl rounded-br-xl drop-shadow-2xl drop-shadow-black/20 border border-gray-200">
-                                <img src={item.photoUrl} className="rounded-tl-xl rounded-br-xl block w-full h-full" />
+                                <img src={item.photoUrl} className="rounded-tl-xl rounded-br-xl w-full h-full object-cover" />
                             </div>
                         </div>
                     </div>

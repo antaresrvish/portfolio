@@ -1,6 +1,6 @@
-import { ITwoService } from "@/types/pages/layers/two"
+import { ITwoService } from "@/types/components/layers/two"
 
-export default function Two({ data }: { data: ITwoService }) {
+export default function Two({ data = { services: [] } }: { data: ITwoService }) {
     return (
         <div className="px-4">
             {data.services.map((item) => {
