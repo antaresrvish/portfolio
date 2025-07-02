@@ -6,7 +6,7 @@ export default function Menu({ menuItems = [], delay = 1250, className = "" }: I
     const { activeItem, setActiveItem } = useMenu();
     return (
         <BlurFade delay={delay}>
-            <nav className={`flex justify-start sm:justify-start mt-20 sm:mt-20 px-0 ${className}`}>
+            <nav className={`flex justify-start sticky sm:justify-start mt-20 sm:mt-20 px-0 ${className}`}>
                 <div className="flex flex-wrap items-center justify-start sm:justify-start rounded-full p-1 max-w-full">
                     {menuItems.map((item) => (
                         <button
