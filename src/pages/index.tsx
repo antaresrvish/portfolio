@@ -105,7 +105,11 @@ const portfolioData = {
       ]}/>
     },
     'connect': {
-      component: <Five></Five>
+      component: <Five data={[
+        { icon: 'Github', title: 'Github', tag: 'antaresrvish', link: 'https://www.github.com/antaresrvish'},
+        { icon: 'Linkedin', title: 'Linkedin', tag: 'antaresrvish', link: 'https://www.github.com/antaresrvish'},
+        { icon: 'Youtube', title: 'Youtube', tag: 'antaresrvish', link: 'https://www.github.com/antaresrvish'},
+      ]}></Five>
     }
   }
 };

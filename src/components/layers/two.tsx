@@ -6,12 +6,12 @@ export default function Two({ data = { services: [] } }: { data: ITwoService }) 
             {data.services.map((item) => {
                 return (
                     <div className="space-y-4">
-                        <div className="flex items-center justify-between py-4 border-b border-gray-200">
+                        <div className="flex items-center justify-between py-4 border-b border-gray-100">
                             <div className="flex items-center space-x-4">
                                 <span className="text-gray-400 font-mono">0{item.id}.</span>
                                 <h3 className="text-lg font-medium">{item.title}</h3>
                             </div>
-                            <div className="px-2 shadow-md border-1 shadow-black/5 border-gray-200 rounded-full flex items-center py-1">
+                            <div className="px-2 shadow-md border-1 shadow-black/5 border-gray-100 rounded-full flex items-center py-1">
                                 <span className="text-gray-600 text-xs">Starts from ${item.price}</span>
                             </div>
                         </div>

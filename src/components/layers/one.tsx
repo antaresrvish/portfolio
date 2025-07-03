@@ -5,13 +5,13 @@ export default function One({ data = [] }: { data: IOne}) {
         <>
             {data.map((item, index) => (
                 <div key={index}>
-                    <div className="w-full flex flex-row shadow-xl/5 mb-6 shadow-black rounded-xl border border-gray-200 h-[293px]">
+                    <div className="w-full flex flex-row shadow-md/5 mb-6 shadow-black rounded-xl border border-gray-100 h-[293px]">
                         <div className="w-1/2 pl-8 pr-4 pt-8">
                             <div className="shadow-2xl/80 shadow-black w-8 h-8">
                                 {item.iconUrl ? (
                                     <img src={item.iconUrl} alt="Icon" className="rounded-lg" />
                                 ) : (
-                                    <div className="rounded-lg w-full h-full flex items-center justify-center border-1 border-gray-300">
+                                    <div className="rounded-lg w-full h-full flex items-center justify-center border-1 border-gray-100">
                                         <span className="text-sm text-gray-400">?</span>
                                     </div>
                                 )}
