@@ -10,7 +10,6 @@ export default function Five({ data }: { data: IFive }) {
                     <span className="text-gray-500">@{item.tag}</span>
                 </a>
             ))}
-
         </div>
     )
 }

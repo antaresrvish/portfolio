@@ -2,23 +2,25 @@ import {IOne} from '@/types/components/layers/one'
 
 export default function One({ data = [] }: { data: IOne}) {
     return (
-        <>
+        <div>
             {data.map((item, index) => (
                 <div key={index}>
                     <div className="w-full flex flex-row shadow-md/5 mb-6 shadow-black rounded-xl border border-gray-100 h-[293px]">
-                        <div className="w-1/2 pl-8 pr-4 pt-8">
-                            <div className="shadow-2xl/80 shadow-black w-8 h-8">
-                                {item.iconUrl ? (
-                                    <img src={item.iconUrl} alt="Icon" className="rounded-lg" />
-                                ) : (
-                                    <div className="rounded-lg w-full h-full flex items-center justify-center border-1 border-gray-100">
-                                        <span className="text-sm text-gray-400">?</span>
-                                    </div>
-                                )}
+                        <div className="w-1/2 pl-8 pr-4 pt-8 flex flex-col justify-between">
+                            <div>
+                                <div className="shadow-2xl/80 shadow-black w-8 h-8">
+                                    {item.iconUrl ? (
+                                        <img src={item.iconUrl} alt="Icon" className="rounded-lg" />
+                                    ) : (
+                                        <div className="rounded-lg w-full h-full flex items-center justify-center border-1 border-gray-100">
+                                            <span className="text-sm text-gray-400">?</span>
+                                        </div>
+                                    )}
+                                </div>
+                                <div className="text-xl font-medium mt-4">{item.title}</div>
+                                <div className="text-sm font-normal text-gray-600 mt-2">{item.description}</div>
                             </div>
-                            <div className="text-xl font-medium mt-4">{item.title}</div>
-                            <div className="text-sm font-normal text-gray-600 mt-2">{item.description}</div>
-                            <div className="group mt-24 border border-black w-28 flex justify-center items-center py-1 rounded-full hover:bg-gray-900 hover:cursor-pointer duration-300 transition-colors">
+                            <div className="group border border-black w-28 flex justify-center items-center py-1 rounded-full hover:bg-gray-900 hover:cursor-pointer duration-300 transition-colors mb-8">
                                 <a href={item.link} target="_blank" className="flex gap-2 items-center">
                                     <span className="text-sm font-medium text-black group-hover:text-white duration-300">Visit site</span>
                                     <div className="w-4 h-4 group-hover:rotate-0 rotate-45 transition-transform duration-300 ease-in-out">
@@ -40,6 +42,6 @@ export default function One({ data = [] }: { data: IOne}) {
                     </div>
                 </div>
             ))}
-        </>
+        </div>
     );
 }

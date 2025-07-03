@@ -9,17 +9,17 @@ export default function Two({ data = { services: [] } }: { data: ITwoService }) 
                         <div className="flex items-center justify-between py-4 border-b border-gray-100">
                             <div className="flex items-center space-x-4">
                                 <span className="text-gray-400 font-mono">0{item.id}.</span>
-                                <h3 className="text-lg font-medium">{item.title}</h3>
+                                <h3 className="text-sm md:text-lg font-medium">{item.title}</h3>
                             </div>
-                            <div className="px-2 shadow-md border-1 shadow-black/5 border-gray-100 rounded-full flex items-center py-1">
-                                <span className="text-gray-600 text-xs">Starts from ${item.price}</span>
+                            <div className="px-2 w-[120px] shadow-md border-1 shadow-black/5 border-gray-100 rounded-full flex items-center py-1">
+                                <span className="text-gray-600 text-xs text-center">Starts from ${item.price}</span>
                             </div>
                         </div>
                     </div>
                 )
             })}
 
-            <div className="flex items-center justify-center space-x-4 mt-16">
+            <div className="flex items-center justify-center space-x-4 my-5">
                 <div className="group border bg-black w-28 flex justify-center items-center py-1 rounded-full hover:bg-gray-900 hover:cursor-pointer duration-300 transition-colors">
                     <a href={data.bookCallLink} target="_blank" className="flex gap-2 items-center">
                         <span className="text-sm font-medium text-white group-hover:text-white duration-300">Book a call</span>
