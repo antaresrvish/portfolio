@@ -5,7 +5,7 @@ export default function One({ data = [] }: { data: IOne}) {
         <div>
             {data.map((item, index) => (
                 <div key={index}>
-                    <div className="w-full flex flex-row shadow-md/5 mb-6 shadow-black rounded-xl border border-gray-100 h-[293px]">
+                    <div className="w-full flex flex-row shadow-md/5 mb-6 shadow-black rounded-xl border border-gray-100 h-fit">
                         <div className="w-1/2 pl-8 pr-4 pt-8 flex flex-col justify-between">
                             <div>
                                 <div className="shadow-2xl/80 shadow-black w-8 h-8">
@@ -20,7 +20,7 @@ export default function One({ data = [] }: { data: IOne}) {
                                 <div className="text-xl font-medium mt-4">{item.title}</div>
                                 <div className="text-sm font-normal text-gray-600 mt-2">{item.description}</div>
                             </div>
-                            <div className="group border border-black w-28 flex justify-center items-center py-1 rounded-full hover:bg-gray-900 hover:cursor-pointer duration-300 transition-colors mb-8">
+                            <div className="group border mt-6 border-black w-28 flex justify-center items-center py-1 rounded-full hover:bg-gray-900 hover:cursor-pointer duration-300 transition-colors mb-8">
                                 <a href={item.link} target="_blank" className="flex gap-2 items-center">
                                     <span className="text-sm font-medium text-black group-hover:text-white duration-300">Visit site</span>
                                     <div className="w-4 h-4 group-hover:rotate-0 rotate-45 transition-transform duration-300 ease-in-out">
@@ -34,8 +34,8 @@ export default function One({ data = [] }: { data: IOne}) {
                                 </a>
                             </div>
                         </div>
-                        <div className="w-1/2 flex pt-6">
-                            <div className="max-w-full rounded-tl-xl rounded-br-xl drop-shadow-2xl drop-shadow-black/20 border border-gray-200">
+                        <div className="w-1/2 flex items-end pt-6">
+                            <div className="max-w-full rounded-tl-xl rounded-br-xl border shadow-black shadow-md/5 border-gray-100">
                                 <img src={item.photoUrl} className="rounded-tl-xl rounded-br-xl w-full h-full object-cover" />
                             </div>
                         </div>
