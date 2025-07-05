@@ -14,10 +14,10 @@ export default function profile({ profile }: { profile: IProfile }) {
                     <span>{title}</span>
                 </div>
             </BlurFade>
-            {biography.map((biography, index) => (
+            {biography.map((biographyItem: string, index: number) => (
                 <BlurFade delay={600 + index * 100} key={index}>
                     <div className="md:text-xl text-md text-gray-600">
-                        <span>{biography}</span>
+                        <span>{biographyItem}</span>
                     </div>
                 </BlurFade>
             ))}
