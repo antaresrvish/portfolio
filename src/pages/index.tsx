@@ -21,6 +21,8 @@ import { IThree } from "@/types/components/layers/three";
 import { IFive } from "@/types/components/layers/five";
 import { IFour } from "@/types/components/layers/four";
 
+export const runtime = 'experimental-edge';
+
 const geistSans = Outfit({
   variable: "--font-geist-sans",
   subsets: ["latin"],
