@@ -1,11 +1,12 @@
 import { IThree } from "@/types/components/layers/three";
 
 export default function Three({ data = [] }: { data: IThree}) {
+    console.log("Three component data:", data);
     return (
         <div className="pb-6 max-w-4xl mx-auto">
             <div className="space-y-6">
-                {data.map((item) => (
-                    <div key={item.id} className="pb-6 border-b border-gray-100">
+                {data.map((item, index) => (
+                    <div key={index} className="pb-6 border-b border-gray-100">
                         <div className="flex items-start space-x-4">
                             <div className="flex-shrink-0 rotate-180">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" className="w-5 h-5 text-gray-400">

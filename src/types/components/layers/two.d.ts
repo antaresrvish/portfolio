@@ -1,5 +1,4 @@
-interface IService {
-    id: number;
+export interface IService {
     title: string;
     price: number;
 }

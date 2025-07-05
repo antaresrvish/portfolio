@@ -10,7 +10,7 @@ export default function One({ data = [] }: { data: IOne}) {
                             <div>
                                 <div className="shadow-2xl/80 shadow-black w-8 h-8">
                                     {item.iconUrl ? (
-                                        <img src={item.iconUrl} alt="Icon" className="rounded-lg" />
+                                        <img src={item.iconUrl} alt="Icon" className="rounded-sm" />
                                     ) : (
                                         <div className="rounded-lg w-full h-full flex items-center justify-center border-1 border-gray-100">
                                             <span className="text-sm text-gray-400">?</span>

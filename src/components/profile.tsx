@@ -2,16 +2,6 @@ import { IProfile } from '@/types/components/profile';
 import { BlurFade } from './effects/blur-fade';
 
 export default function profile({ profile }: { profile: IProfile }) {
-    // Fallback data in case profile is undefined
-    const defaultProfile = {
-        title: "Hey, I'm Yusuf Yıldırım.",
-        biography: [
-            "I'm a Backend Developer and Electronics Hobbyist.",
-            "I spend most of the time thinking about Tea."
-        ],
-        photoUrl: "/profile-photo.jpeg"
-    };
-    
     const { title, biography, photoUrl } = profile;
 
     return (

@@ -4,7 +4,12 @@ import { getStoryblokApi } from '@/lib/storyblok';
 import { IProfile } from "@/types/components/profile";
 import { ISocialLinks } from "@/types/components/social-links";
 import { IOne } from "@/types/components/layers/one";
-import { Profile, Social, Project } from "@/types/components/storyblok/space-types/storyblok-components";
+import { ITwoService, IService } from "@/types/components/layers/two";
+import { IThree } from "@/types/components/layers/three";
+
+import { Profile, Social, Project, Service, Client, TechStack, Connect } from "@/types/components/storyblok/space-types/storyblok-components";
+import { IFour } from "@/types/components/layers/four";
+import { IFive } from "@/types/components/layers/five";
 
 export const getServerSideProps: GetServerSideProps = async () => {
     try {
@@ -15,8 +20,12 @@ export const getServerSideProps: GetServerSideProps = async () => {
         let profileData: IProfile | null = null;
         let socialData: ISocialLinks = [];
         let projectData: IOne = [];
+        let serviceData: ITwoService | null = null;
+        let clientData: IThree = [];
+        let techStackData: IFour = [];
+        let connectData: IFive = [];
 
-        data.forEach((item: Profile | Social | Project) => {
+        data.forEach((item: Profile | Social | Project | Service | Client | TechStack | Connect, index: number) => {
             switch (item.component) {
                 case "Profile": {
                     const profileItem = item as Profile;
@@ -71,6 +80,80 @@ export const getServerSideProps: GetServerSideProps = async () => {
                     }
                     break;
                 }
+                case "Service": {
+                    const serviceItem = item as Service;
+                    const services: IService[] = [];
+                    
+                    if (serviceItem.services?.tbody) {
+                        serviceItem.services.tbody.forEach((row: any) => {
+                            if (row.body && row.body.length > 0) {
+                                services.push({
+                                    title: row.body[0]?.value || "",
+                                    price: parseFloat(row.body[1]?.value) || 0
+                                });
+                            }
+                        });
+                    }
+                    
+                    serviceData = {
+                        services: services,
+                        bookCallLink: serviceItem.bookCallLink,
+                        emailLink: serviceItem.emailLink
+                    };
+                    break;
+                }
+                case "Client": {
+                    const clientItem = item as Client;
+
+                    if (clientItem.clients?.tbody) {
+                        clientItem.clients.tbody.forEach(row => {
+                            if (row.body && row.body.length > 0) {
+                                clientData.push({
+                                    text: row.body[0]?.value || "",
+                                    avatar: row.body[1]?.value || "",
+                                    author: row.body[2]?.value || "",
+                                    projectName: row.body[3]?.value || ""
+                                });
+                            }
+                        });
+                    }
+
+                    console.log("Client data:", clientData);
+                    break;
+                }
+                case "Tech Stack": {
+                    const techStackItem = item as TechStack;
+
+                    if (techStackItem.tech_stack?.tbody) {
+                        techStackItem.tech_stack.tbody.forEach(row => {
+                            if (row.body && row.body.length > 0) {
+                                techStackData.push({
+                                    title: row.body[0]?.value || "",
+                                    photoUrl: row.body[1]?.value || "",
+                                    url: row.body[2]?.value || ""
+                                });
+                            }
+                        });
+                    }
+                    break;
+                }
+                case "Connect": {
+                    const connectItem = item as Connect;
+
+                    if (connectItem.connect?.tbody) {
+                        connectItem.connect.tbody.forEach(row => {
+                            if (row.body && row.body.length > 0) {
+                                connectData.push({
+                                    title: row.body[0]?.value || "",
+                                    tag: row.body[1]?.value || "",
+                                    link: row.body[2]?.value || "",
+                                    icon: row.body[3]?.value || ""
+                                });
+                            }
+                        });
+                    }
+                    break;
+                }
                 default: {
                     const socialData: IProfile = {
                         title: "Error no data returned",
@@ -97,7 +180,11 @@ export const getServerSideProps: GetServerSideProps = async () => {
             props: {
                 profileData: profileData,
                 socialData: socialData,
-                projectData: projectData
+                projectData: projectData,
+                serviceData: serviceData,
+                clientData: clientData,
+                techStackData: techStackData,
+                connectData: connectData,
             },
         };
     } catch (error) {
@@ -115,7 +202,8 @@ export const getServerSideProps: GetServerSideProps = async () => {
                     { tooltip: "", link: "", icon: "" },
                     { tooltip: "", link: "", icon: "" },
                     { tooltip: "", link: "", icon: "" }
-                ]
+                ],
+                serviceData: null
             }
         }
     }
