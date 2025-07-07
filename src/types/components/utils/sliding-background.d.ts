@@ -1,5 +1,5 @@
 export interface ISlidingBackground {
-    activeItem: string | null;
+    activeItem: string;
     className?: string;
     children: React.ReactNode;
 }

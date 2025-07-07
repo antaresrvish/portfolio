@@ -1,69 +1,34 @@
 import { createContext, useContext, useState, ReactNode, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { IMenuContextType } from '@/types/contexts/menu-context';
-import { menuConfig, validSectionIds, getMenuItemById } from '@/config/menu-config';
+import { MenuContextType } from '@/types/contexts/menu-context';
+import { menuItems } from '@/config/menu-config';
 
-const MenuContext = createContext<IMenuContextType | undefined>(undefined);
+const MenuContext = createContext<MenuContextType | undefined>(undefined);
 
 export function MenuProvider({ children }: { children: ReactNode }) {
     const router = useRouter();
-    const [activeItem, setActiveItem] = useState(menuConfig[0]?.id || 'projects');
-    const [isInitialized, setIsInitialized] = useState(false);
+    const [activeItem, setActiveItem] = useState(menuItems[0]?.id || 'projects');
+
+    const validIds = menuItems.map(item => item.id);
 
     useEffect(() => {
         const section = router.query.section as string;
-        if (section && validSectionIds.includes(section)) {
+        if (section && validIds.includes(section)) {
             setActiveItem(section);
         } else if (router.isReady && !router.query.section) {
-            const defaultSection = menuConfig[0]?.id || 'projects';
-            router.replace(`/?section=${defaultSection}`, undefined, { shallow: true });
+            router.replace(`/?section=${menuItems[0]?.id}`, undefined, { shallow: true });
         }
-        setIsInitialized(true);
     }, [router.query.section, router.isReady]);
 
-    useEffect(() => {
-        const handleRouteChange = (url: string) => {
-            const urlParams = new URLSearchParams(url.split('?')[1]);
-            const section = urlParams.get('section');
-            if (section && validSectionIds.includes(section)) {
-                setActiveItem(section);
-            }
-        };
-
-        router.events.on('routeChangeComplete', handleRouteChange);
-        return () => {
-            router.events.off('routeChangeComplete', handleRouteChange);
-        };
-    }, [router.events]);
-
     const handleSetActiveItem = (item: string) => {
-        if (!isInitialized) return;
-        
-        if (!validSectionIds.includes(item)) {
-            console.warn(`Invalid menu item: ${item}`);
-            return;
-        }
+        if (!validIds.includes(item)) return;
         
         setActiveItem(item);
-        
-        const newUrl = {
-            pathname: router.pathname,
-            query: { ...router.query, section: item }
-        };
-        
-        router.push(newUrl, undefined, { shallow: true });
-    };
-    const getActiveLayer = () => {
-        return getMenuItemById(activeItem);
+        router.push(`/?section=${item}`, undefined, { shallow: true });
     };
 
     return (
-        <MenuContext.Provider value={{ 
-            activeItem, 
-            setActiveItem: handleSetActiveItem, 
-            menuLayers: menuConfig,
-            getActiveLayer 
-        }}>
+        <MenuContext.Provider value={{ activeItem, setActiveItem: handleSetActiveItem }}>
             {children}
         </MenuContext.Provider>
     );
@@ -71,7 +36,7 @@ export function MenuProvider({ children }: { children: ReactNode }) {
 
 export function useMenu() {
     const context = useContext(MenuContext);
-    if (context === undefined) {
+    if (!context) {
         throw new Error('useMenu must be used within a MenuProvider');
     }
     return context;

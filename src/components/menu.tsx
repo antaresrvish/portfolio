@@ -1,27 +1,24 @@
 import { useMenu } from '@/contexts/menu-context';
 import { BlurFade } from './effects/blur-fade';
 import { SlidingBackground } from './utils/sliding-background';
+import { menuItems } from '@/config/menu-config';
 import Link from 'next/link';
 
-interface IMenuProps {
+interface MenuProps {
     delay?: number;
     className?: string;
 }
 
-export default function Menu({ delay = 1250, className = "" }: IMenuProps) {
-    const { activeItem, setActiveItem, menuLayers } = useMenu();
-
-    const handleMenuClick = (itemId: string) => {
-        setActiveItem(itemId);
-    };
+export default function Menu({ delay = 1250, className = "" }: MenuProps) {
+    const { activeItem, setActiveItem } = useMenu();
 
     return (
         <BlurFade delay={delay}>
-            <nav className={`flex justify-start sticky sm:justify-start mt-20 sm:mt-20 px-0 ${className}`}>
+            <nav className={`flex justify-start sticky sm:justify-start mt-20 sm:mt-20 mb-10 px-0 ${className}`}>
                 <SlidingBackground 
                     activeItem={activeItem}
                     className="flex flex-wrap items-center justify-start sm:justify-start rounded-full p-1 max-w-full">
-                    {menuLayers.map((item) => (
+                    {menuItems.map((item) => (
                         <Link
                             key={item.id}
                             href={`/?section=${item.id}`}
@@ -34,9 +31,7 @@ export default function Menu({ delay = 1250, className = "" }: IMenuProps) {
                                     : 'text-gray-600 hover:text-gray-90'
                                 }
                             `}
-                            onClick={(e) => {
-                                handleMenuClick(item.id);
-                            }}
+                            onClick={() => setActiveItem(item.id)}
                         >
                             <span data-item-id={item.id}>{item.title}</span>
                         </Link>

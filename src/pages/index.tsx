@@ -32,41 +32,29 @@ interface HomeProps {
   techStackData: IFour;
   connectData: IFive;
 }
-
-interface HomeProps {
-  profileData: IProfile;
-  socialData: ISocialLinks;
-  projectData: IOne;
-  serviceData: ITwoService;
-  clientData: IThree;
-  techStackData: IFour;
-  connectData: IFive;
-}
-
 export default function Home({ profileData, socialData, projectData, serviceData, clientData, techStackData, connectData }: HomeProps) {
-  console.log("clientData", clientData);
+  const layerData = {
+    projects: projectData,
+    services: serviceData,
+    clients: clientData,
+    techstack: techStackData,
+    connect: connectData
+  };
   
   return (
     <StoryblokProvider>
       <MenuProvider>
-        <div
-          className={`${geistSans.className} flex justify-center h-screen bg-grey-100 sm:px-10 px-6`}>
+        <div className={`${geistSans.className} flex justify-center h-screen bg-grey-100 sm:px-10 px-6`}>
           <div className="flex flex-col md:w-[700px] w-full md:pt-24 pt-20">
             <div className="w-full flex flex-col">
               <Profile profile={profileData} />
               <SocialLinks data={socialData} />
               <Menu />
-              <DynamicLayer 
-                projectData={projectData}
-                serviceData={serviceData}
-                clientData={clientData}
-                techStackData={techStackData}
-                connectData={connectData}
-              />
+              <DynamicLayer data={layerData} />
             </div>
           </div>
         </div>
-        <BlurFooter></BlurFooter>
+        <BlurFooter />
       </MenuProvider>
     </StoryblokProvider>
   );
