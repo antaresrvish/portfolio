@@ -4,4 +4,4 @@ export interface Menu {
     component: ComponentType<any>;
 }
 
-export type MenuItem = Menu[];
+export type IMenuItem = Menu[];

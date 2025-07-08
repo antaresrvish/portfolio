@@ -1,15 +1,16 @@
 import { useMenu } from '@/contexts/menu-context';
 import { BlurFade } from './effects/blur-fade';
 import { SlidingBackground } from './utils/sliding-background';
-import { menuItems } from '@/config/menu-config';
 import Link from 'next/link';
+import { IMenuItem } from '@/types/components/menu-item';
 
 interface MenuProps {
     delay?: number;
     className?: string;
+    menuData: IMenuItem;
 }
 
-export default function Menu({ delay = 1250, className = "" }: MenuProps) {
+export default function Menu({ delay = 1250, className = "", menuData }: MenuProps) {
     const { activeItem, setActiveItem } = useMenu();
 
     return (
@@ -18,7 +19,7 @@ export default function Menu({ delay = 1250, className = "" }: MenuProps) {
                 <SlidingBackground 
                     activeItem={activeItem}
                     className="flex flex-wrap items-center justify-start sm:justify-start rounded-full p-1 max-w-full">
-                    {menuItems.map((item) => (
+                    {menuData.map((item) => (
                         <Link
                             key={item.id}
                             href={`/?section=${item.id}`}

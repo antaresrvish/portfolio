@@ -1,7 +1,6 @@
 import { IThree } from "@/types/components/layers/three";
 
 export default function Three({ data = [] }: { data: IThree}) {
-    console.log("Three component data:", data);
     return (
         <div className="pb-6 max-w-4xl mx-auto">
             <div className="space-y-6">
