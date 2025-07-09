@@ -1,16 +1,11 @@
 import Profile from "@/components/profile";
 import SocialLinks from "@/components/social-links";
 import Menu from "@/components/menu";
-import MenuLayer from "@/components/menu-layer";
+import DynamicLayer from "@/components/dynamic-layer";
 import { MenuProvider } from "@/contexts/menu-context";
 import StoryblokProvider from "@/components/storyblok-provider";
 import { Outfit } from "next/font/google";
 import BlurFooter from "@/components/blur-footer";
-import One from "@/components/layers/one";
-import Two from "@/components/layers/two";
-import Three from "@/components/layers/three";
-import Four from "@/components/layers/four";
-import Five from "@/components/layers/five";
 import { GetServerSideProps } from 'next';
 import { ISocialLinks } from "@/types/components/social-links";
 import { IProfile } from "@/types/components/profile";
@@ -20,7 +15,8 @@ import { ITwoService } from "@/types/components/layers/two";
 import { IThree } from "@/types/components/layers/three";
 import { IFive } from "@/types/components/layers/five";
 import { IFour } from "@/types/components/layers/four";
-
+import { IMenuItem } from "@/types/components/menu-item";
+import { ICard } from "@/types/components/templates/card";
 export const runtime = 'experimental-edge';
 
 const geistSans = Outfit({
@@ -31,57 +27,46 @@ const geistSans = Outfit({
 interface HomeProps {
   profileData: IProfile;
   socialData: ISocialLinks;
-  projectData: IOne;
-  serviceData: ITwoService;
-  clientData: IThree;
-  techStackData: IFour;
-  connectData: IFive;
+  layerOne: IOne | ICard;
+  layerTwo: ITwoService;
+  layerThree: IThree;
+  layerFour: IFour;
+  layerFive: IFive;
+  menuData: IMenuItem;
 }
+export default function Home({ profileData, socialData, layerOne, layerTwo, layerThree, layerFour, layerFive, menuData }: HomeProps) {
+  
+  const layerData: Record<string, any> = {};
+  const componentToLayerMap: Record<string, any> = {
+    'One': layerOne,
+    'Card': layerOne,
+    'Two': layerTwo,
+    'Three': layerThree,
+    'Four': layerFour,
+    'Five': layerFive
+  };
+  
+  menuData.forEach((menuItem) => {
+    const layerDataForComponent = componentToLayerMap[menuItem.component];
+    if (layerDataForComponent) {
+      layerData[menuItem.id] = layerDataForComponent;
+    }
+  });
 
-const portfolioData = {
-  menu: [
-    { id: 'projects', label: 'Projects' },
-    { id: 'services', label: 'Services' },
-    { id: 'clients', label: 'Clients' },
-    { id: 'techstack', label: 'Tech Stack' },
-    { id: 'connect', label: 'Connect' }
-  ],
-};
-
-export default function Home({ profileData, socialData, projectData, serviceData, clientData, techStackData, connectData }: HomeProps) {
-  console.log("clientData", clientData);
   return (
     <StoryblokProvider>
-      <MenuProvider>
-        <div
-          className={`${geistSans.className} flex justify-center h-screen bg-grey-100 sm:px-10 px-6`}>
+      <MenuProvider menuData={menuData}>
+        <div className={`${geistSans.className} flex justify-center h-screen bg-grey-100 sm:px-10 px-6`}>
           <div className="flex flex-col md:w-[700px] w-full md:pt-24 pt-20">
             <div className="w-full flex flex-col">
               <Profile profile={profileData} />
               <SocialLinks data={socialData} />
-              <Menu menuItems={portfolioData.menu} />
-              <MenuLayer layerConfig={{
-                'projects': {
-                  component: <One data={projectData} />
-                },
-                'services': {
-                  component: <Two data={serviceData} />
-                },
-                'clients': {
-                  component: <Three data={clientData} />
-                },
-                'techstack': {
-                  component: <Four data={techStackData} />
-                },
-                'connect': {
-                  component: <Five data={connectData}></Five>
-                }
-
-              }} />
+              <Menu menuData={menuData} />
+              <DynamicLayer data={layerData} menuData={menuData} />
             </div>
           </div>
         </div>
-        <BlurFooter></BlurFooter>
+        <BlurFooter />
       </MenuProvider>
     </StoryblokProvider>
   );

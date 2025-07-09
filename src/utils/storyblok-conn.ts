@@ -6,10 +6,11 @@ import { ISocialLinks } from "@/types/components/social-links";
 import { IOne } from "@/types/components/layers/one";
 import { ITwoService, IService } from "@/types/components/layers/two";
 import { IThree } from "@/types/components/layers/three";
-
-import { Profile, Social, Project, Service, Client, TechStack, Connect } from "@/types/components/storyblok/space-types/storyblok-components";
 import { IFour } from "@/types/components/layers/four";
 import { IFive } from "@/types/components/layers/five";
+import { IMenuItem } from "@/types/components/menu-item";
+import { Profile, Social, Project, Service, Client, TechStack, Connect, Menu } from "@/types/components/storyblok/space-types/storyblok-components";
+
 
 export const getServerSideProps: GetServerSideProps = async () => {
     try {
@@ -24,8 +25,9 @@ export const getServerSideProps: GetServerSideProps = async () => {
         let clientData: IThree = [];
         let techStackData: IFour = [];
         let connectData: IFive = [];
+        let menuData: IMenuItem = [];
 
-        data.forEach((item: Profile | Social | Project | Service | Client | TechStack | Connect, index: number) => {
+        data.forEach((item: Profile | Social | Project | Service | Client | TechStack | Connect | Menu, index: number) => {
             switch (item.component) {
                 case "Profile": {
                     const profileItem = item as Profile;
@@ -64,7 +66,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
                 }
                 case "Project": {
                     const projectItem = item as Project;
-
+                    
                     if(projectItem.Project?.tbody) {
                         projectItem.Project?.tbody.forEach(row => {
                             if (row.body && row.body.length > 0) {
@@ -118,7 +120,6 @@ export const getServerSideProps: GetServerSideProps = async () => {
                         });
                     }
 
-                    console.log("Client data:", clientData);
                     break;
                 }
                 case "Tech Stack": {
@@ -154,6 +155,23 @@ export const getServerSideProps: GetServerSideProps = async () => {
                     }
                     break;
                 }
+                case "Menu": {
+                    const menuItem = item as Menu;
+
+                    if(menuItem.menu?.tbody) {
+                        menuItem.menu.tbody.forEach(row => {
+                            if(row.body && row.body.length > 0) {
+                                menuData.push({
+                                    id: row.body[0]?.value || "",
+                                    title: row.body[1]?.value || "",
+                                    component: row.body[2]?.value || ""
+                                })
+                            }
+                        })
+                    }
+
+                    break;
+                }
                 default: {
                     const socialData: IProfile = {
                         title: "Error no data returned",
@@ -180,11 +198,12 @@ export const getServerSideProps: GetServerSideProps = async () => {
             props: {
                 profileData: profileData,
                 socialData: socialData,
-                projectData: projectData,
-                serviceData: serviceData,
-                clientData: clientData,
-                techStackData: techStackData,
-                connectData: connectData,
+                layerOne: projectData,
+                layerTwo: serviceData,
+                layerThree: clientData,
+                layerFour: techStackData,
+                layerFive: connectData,
+                menuData: menuData
             },
         };
     } catch (error) {

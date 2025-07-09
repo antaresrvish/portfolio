@@ -15,8 +15,15 @@ export interface Connect {
   [k: string]: unknown;
 }
 
+export interface Menu {
+  menu?: StoryblokTable;
+  component: "Menu";
+  _uid: string;
+  [k: string]: unknown;
+}
+
 export interface Page {
-  body?: (Client | Connect | Page | Profile | Project | Service | Social | TechStack)[];
+  body?: (Client | Connect | Menu | Page | Profile | Project | Service | Social | TechStack)[];
   component: "page";
   _uid: string;
   [k: string]: unknown;

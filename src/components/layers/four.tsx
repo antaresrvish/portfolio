@@ -2,7 +2,7 @@ import { IFour } from "@/types/components/layers/four"
 
 export default function Four({ data = [] }: { data: IFour }) {
     return (
-        <div className="pb-6 max-w-4xl mx-auto px-4 sm:px-6">
+        <div className="pb-6 max-w-4xl mx-auto">
             <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 {data.map((item) => (
                     <a href={item.url} target="_blank" className="bg-white h-[130px] sm:h-[140px] lg:h-[130px] rounded-2xl p-4 sm:p-6 border border-gray-100 hover:shadow-lg transition-shadow duration-200 group relative block cursor-pointer">
