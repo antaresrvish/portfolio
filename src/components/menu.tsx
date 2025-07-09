@@ -15,10 +15,10 @@ export default function Menu({ delay = 1250, className = "", menuData }: MenuPro
 
     return (
         <BlurFade delay={delay}>
-            <nav className={`flex justify-start sticky sm:justify-start mt-20 sm:mt-20 mb-10 px-0 ${className}`}>
+            <nav className={`flex justify-start  sticky sm:justify-start mt-20 sm:mt-20 mb-10 px-0 ${className}`}>
                 <SlidingBackground 
                     activeItem={activeItem}
-                    className="flex flex-wrap items-center justify-start sm:justify-start rounded-full p-1 max-w-full">
+                    className="flex flex-wrap items-center justify-start sm:justify-start rounded-full py-1 max-w-full">
                     {menuData.map((item) => (
                         <Link
                             key={item.id}

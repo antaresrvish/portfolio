@@ -35,16 +35,24 @@ interface HomeProps {
   menuData: IMenuItem;
 }
 export default function Home({ profileData, socialData, layerOne, layerTwo, layerThree, layerFour, layerFive, menuData }: HomeProps) {
-  console.log(menuData)
   
   const layerData: Record<string, any> = {};
-  const dataLayers = [layerOne, layerTwo, layerThree, layerFour, layerFive];
+  const componentToLayerMap: Record<string, any> = {
+    'One': layerOne,
+    'Card': layerOne,
+    'Two': layerTwo,
+    'Three': layerThree,
+    'Four': layerFour,
+    'Five': layerFive
+  };
   
-  menuData.forEach((menuItem, index) => {
-    if (dataLayers[index]) {
-      layerData[menuItem.id] = dataLayers[index];
+  menuData.forEach((menuItem) => {
+    const layerDataForComponent = componentToLayerMap[menuItem.component];
+    if (layerDataForComponent) {
+      layerData[menuItem.id] = layerDataForComponent;
     }
   });
+
   return (
     <StoryblokProvider>
       <MenuProvider menuData={menuData}>
