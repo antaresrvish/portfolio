@@ -173,19 +173,50 @@ export const getServerSideProps: GetServerSideProps = async () => {
                     break;
                 }
                 default: {
-                    const socialData: IProfile = {
-                        title: "Error no data returned",
-                        biography: [
-                            "error"
-                        ],
-                        photoUrl: ""
-                    };
+                    // Set default/error values for all data types if not already set
+                    if (!profileData) {
+                        profileData = {
+                            title: "Error - No data returned",
+                            biography: ["No profile data available"],
+                            photoUrl: ""
+                        };
+                    }
 
-                    const profileData: ISocialLinks = [
-                        { tooltip: "", link: "", icon: "" },
-                        { tooltip: "", link: "", icon: "" },
-                        { tooltip: "", link: "", icon: "" }
-                    ];
+                    if (socialData.length === 0) {
+                        socialData = [
+                            { tooltip: "", link: "", icon: "" },
+                            { tooltip: "", link: "", icon: "" },
+                            { tooltip: "", link: "", icon: "" }
+                        ];
+                    }
+
+                    if (projectData.length === 0) {
+                        projectData = [];
+                    }
+
+                    if (!serviceData) {
+                        serviceData = {
+                            services: [],
+                            bookCallLink: "",
+                            emailLink: ""
+                        };
+                    }
+
+                    if (clientData.length === 0) {
+                        clientData = [];
+                    }
+
+                    if (techStackData.length === 0) {
+                        techStackData = [];
+                    }
+
+                    if (connectData.length === 0) {
+                        connectData = [];
+                    }
+
+                    if (menuData.length === 0) {
+                        menuData = [];
+                    }
 
                     break;
                 }
@@ -213,7 +244,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
                 profileData: {
                     title: "Error",
                     biography: [
-                        "error no data"
+                        "Failed to load data from Storyblok"
                     ],
                     photoUrl: ""
                 },
@@ -222,7 +253,16 @@ export const getServerSideProps: GetServerSideProps = async () => {
                     { tooltip: "", link: "", icon: "" },
                     { tooltip: "", link: "", icon: "" }
                 ],
-                serviceData: null
+                layerOne: [],
+                layerTwo: {
+                    services: [],
+                    bookCallLink: "",
+                    emailLink: ""
+                },
+                layerThree: [],
+                layerFour: [],
+                layerFive: [],
+                menuData: []
             }
         }
     }
