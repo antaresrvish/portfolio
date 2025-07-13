@@ -1,9 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Portfolio Project
 
-## Getting Started
+This is a [Storyblok](https://www.storyblok.com/) CMS-based portfolio project built with [Next.js](https://nextjs.org). It features an extensible architecture that is open to adding new components and further development.
 
-First, run the development server:
+## Setup
 
+### 1. Create Storyblok Space
+- Login to your [Storyblok](https://www.storyblok.com/) account
+- Create a new space
+
+### 2. Environment Configuration
+Copy the information from `.env.example` to your `.env` file:
+
+```bash
+cp .env.example .env
+```
+
+### 3. Storyblok CLI Installation
+```bash
+npm install -g storyblok
+storyblok login
+```
+
+### 4. Push Components to Storyblok
+After login:
+```bash
+npm run storyblok:push
+```
+
+This will push components and presets to your space.
+
+### 5. Start Development Server
 ```bash
 npm run dev
 # or
@@ -14,27 +40,29 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### 6. Build for Production
+To build the application for production:
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```bash
+npm run build
+# or
+yarn build
+# or
+pnpm build
+# or
+bun build
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+You can make changes by adding components and selecting their presets in Storyblok CMS. The project will update in real-time.
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+- Storyblok CMS integration
+- Next.js based
+- TypeScript support
+- Tailwind CSS
+- Component-based architecture
