@@ -18,7 +18,17 @@
     "is_root": false,
     "preview_tmpl": null,
     "is_nestable": true,
-    "all_presets": [],
+    "all_presets": [
+      {
+        "id": 68470885810327,
+        "name": "client",
+        "component_id": 65618281044832,
+        "image": "",
+        "icon": "",
+        "color": "",
+        "description": ""
+      }
+    ],
     "preset_id": null,
     "real_name": "Client",
     "component_group_uuid": null,
@@ -48,7 +58,17 @@
     "is_root": false,
     "preview_tmpl": null,
     "is_nestable": true,
-    "all_presets": [],
+    "all_presets": [
+      {
+        "id": 68470673698965,
+        "name": "connect",
+        "component_id": 65620909931364,
+        "image": "",
+        "icon": "",
+        "color": "",
+        "description": ""
+      }
+    ],
     "preset_id": null,
     "real_name": "Connect",
     "component_group_uuid": null,
@@ -78,7 +98,17 @@
     "is_root": false,
     "preview_tmpl": null,
     "is_nestable": true,
-    "all_presets": [],
+    "all_presets": [
+      {
+        "id": 68469663957140,
+        "name": "menu",
+        "component_id": 66420357804858,
+        "image": "",
+        "icon": "",
+        "color": "#dfe3e8",
+        "description": "Preset data fro menu"
+      }
+    ],
     "preset_id": null,
     "real_name": "Menu",
     "component_group_uuid": null,
@@ -147,7 +177,17 @@
     "is_root": false,
     "preview_tmpl": null,
     "is_nestable": true,
-    "all_presets": [],
+    "all_presets": [
+      {
+        "id": 68471598010523,
+        "name": "profile",
+        "component_id": 64935881646761,
+        "image": "",
+        "icon": "",
+        "color": "",
+        "description": ""
+      }
+    ],
     "preset_id": null,
     "real_name": "Profile",
     "component_group_uuid": null,
@@ -170,7 +210,7 @@
     "display_name": null,
     "description": null,
     "created_at": "2025-07-04T11:20:24.799Z",
-    "updated_at": "2025-07-04T11:22:55.111Z",
+    "updated_at": "2025-07-13T11:29:46.716Z",
     "id": 65283787981364,
     "schema": {
       "Project": {
@@ -184,7 +224,17 @@
     "is_root": false,
     "preview_tmpl": null,
     "is_nestable": true,
-    "all_presets": [],
+    "all_presets": [
+      {
+        "id": 68471121281177,
+        "name": "project",
+        "component_id": 65283787981364,
+        "image": "",
+        "icon": "",
+        "color": "",
+        "description": ""
+      }
+    ],
     "preset_id": null,
     "real_name": "Project",
     "component_group_uuid": null,
@@ -224,7 +274,17 @@
     "is_root": false,
     "preview_tmpl": null,
     "is_nestable": true,
-    "all_presets": [],
+    "all_presets": [
+      {
+        "id": 68471037149336,
+        "name": "services",
+        "component_id": 65613666020191,
+        "image": "",
+        "icon": "",
+        "color": "",
+        "description": ""
+      }
+    ],
     "preset_id": null,
     "real_name": "Service",
     "component_group_uuid": null,
@@ -254,7 +314,17 @@
     "is_root": false,
     "preview_tmpl": null,
     "is_nestable": true,
-    "all_presets": [],
+    "all_presets": [
+      {
+        "id": 68471389544602,
+        "name": "social",
+        "component_id": 65037241518437,
+        "image": "",
+        "icon": "",
+        "color": "",
+        "description": ""
+      }
+    ],
     "preset_id": null,
     "real_name": "Social",
     "component_group_uuid": null,
@@ -284,7 +354,17 @@
     "is_root": false,
     "preview_tmpl": null,
     "is_nestable": true,
-    "all_presets": [],
+    "all_presets": [
+      {
+        "id": 68470785216662,
+        "name": "techstack",
+        "component_id": 65619290004323,
+        "image": "",
+        "icon": "",
+        "color": "",
+        "description": ""
+      }
+    ],
     "preset_id": null,
     "real_name": "Tech Stack",
     "component_group_uuid": null,

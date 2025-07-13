@@ -1,0 +1,1068 @@
+[
+  {
+    "id": 68470885810327,
+    "name": "client",
+    "preset": {
+      "_uid": "397785a2-81f5-4f33-91e3-8dd2f75ff387",
+      "clients": {
+        "tbody": [
+          {
+            "_uid": "6c907524-2ff2-4fc7-ba99-c62c0d657690",
+            "body": [
+              {
+                "_uid": "a88ac038-3487-4aee-b209-54be0b921d62",
+                "value": "Working with this developer was an amazing experience! The project was delivered on time and exceeded all expectations. Highly professional and skilled.",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "5869625f-c829-4f25-afa0-804b726e5e82",
+                "value": "",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "3d8eb98a-36f4-4cbf-a5e3-b1f9e6238196",
+                "value": "John Doe",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "fda28f86-d1cc-4ba6-8e90-e2807ef89058",
+                "value": "@rust-kvm",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "_uid": "6e1a147f-9082-4ac8-aad5-d441992dd615",
+            "body": [
+              {
+                "_uid": "19bee1b3-3728-46e1-acd8-3128f20f3ad0",
+                "value": "Exceptional work quality and attention to detail. The communication throughout the project was excellent and the final result was exactly what we needed.",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "850675dc-1ac4-4121-975a-bf05d2125498",
+                "value": "",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "b9ca23bd-d486-41b6-87ee-f58e718853db",
+                "value": "Michael Chen",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "f89000bd-ec05-45dc-9ea9-51d95ff12e40",
+                "value": "@pic-18f4450-temp",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "_uid": "f9be5be6-14c7-4ed9-9e7f-60c0aa861682",
+            "body": [
+              {
+                "_uid": "6643fa19-b784-4311-9cb2-c204b133e00e",
+                "value": "Outstanding technical skills and creative problem-solving. This developer transformed our vision into reality with precision and expertise.",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "9ff9c8ae-fb04-44e4-937f-fac56281db18",
+                "value": "",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "47abac4c-0653-47bd-883c-6dacc07d02d8",
+                "value": "Emma Rodriguez",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "3a5a46bf-7fa9-4b82-8b3b-d5a61082639c",
+                "value": "@todo-app",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          }
+        ],
+        "thead": [
+          {
+            "_uid": "c0f2f570-3f30-43a0-87b6-84844f7c4806",
+            "value": "text",
+            "component": "_table_head"
+          },
+          {
+            "_uid": "212e09f1-c3cf-4e6e-9cdc-00fe04da486b",
+            "value": "avatar",
+            "component": "_table_head"
+          },
+          {
+            "_uid": "86b2da08-eaed-4bab-8e53-94fd2c47ccf8",
+            "value": "author",
+            "component": "_table_head"
+          },
+          {
+            "_uid": "3a1dab1d-4ac9-497b-8a61-faf09d7a27b7",
+            "value": "projectName",
+            "component": "_table_head"
+          }
+        ],
+        "fieldtype": "table"
+      },
+      "component": "Client"
+    },
+    "component_id": 65618281044832,
+    "space_id": 285533317819926,
+    "created_at": "2025-07-13T11:28:44.855Z",
+    "updated_at": "2025-07-13T11:28:44.855Z",
+    "image": "",
+    "color": "",
+    "icon": "",
+    "description": ""
+  },
+  {
+    "id": 68470673698965,
+    "name": "connect",
+    "preset": {
+      "_uid": "087120f7-b29c-4e22-8177-9624af5b6857",
+      "connect": {
+        "tbody": [
+          {
+            "_uid": "2e54d080-ef09-4906-9e8b-a4274ad1a764",
+            "body": [
+              {
+                "_uid": "17ecfc2d-2730-4bbd-9200-39d11445b0b6",
+                "value": "Github",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "b02280fd-6241-487b-85cd-87689a63f4d7",
+                "value": "@test",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "68800318-e541-445f-84f7-51463ac97276",
+                "value": "https://www.github.com/test",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "acb0b1c7-49c6-48a1-81fd-7e93ffdfb68a",
+                "value": "Github",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "_uid": "90ca0017-0505-4666-bf12-2a4100e2f639",
+            "body": [
+              {
+                "_uid": "b6153c8d-7989-4eb7-9afb-2dcd9efdcd16",
+                "value": "Linkedin",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "e53e99a6-5f66-45ef-b8d7-b227e36cbb16",
+                "value": "in/test",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "039017b6-f03b-4ea6-bcb1-5f7768c11b4e",
+                "value": "https://www.linkedin.com/in/test",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "7c98719d-014f-4600-b9c0-74887be5c091",
+                "value": "Linkedin",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "_uid": "562fceef-fc0e-4b7a-8ab1-734b2fcfa5de",
+            "body": [
+              {
+                "_uid": "cd65ec57-b763-4e0a-9bae-6e796b6db4e6",
+                "value": "Youtube",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "b536f869-1c95-4f5f-80a6-c532012900e2",
+                "value": "@test",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "3a00b81a-ea9a-4a3a-9cec-a9a2855724b2",
+                "value": "https://www.youtube.com/@test",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "d302d3d3-16cb-4bc7-b692-f5d6f6edab9f",
+                "value": "Youtube",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "_uid": "df29859a-bf63-4964-ab75-eb2a06238cf7",
+            "body": [
+              {
+                "_uid": "225f5193-4174-4ca4-9ef4-2dfee5152720",
+                "value": "Mail",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "4b968bce-66eb-47f2-95ac-c198ec5f176c",
+                "value": "test@gmail.com",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "82f5eaf4-1ea0-48b9-b888-44762fab8d98",
+                "value": "mailto:test@gmail.com",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "7d9b2080-1dbe-4bb8-8864-f8363fc57691",
+                "value": "RegEnvelope",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          }
+        ],
+        "thead": [
+          {
+            "_uid": "014726a9-b703-4cdf-95a0-d6dbeaf7db66",
+            "value": "title",
+            "component": "_table_head"
+          },
+          {
+            "_uid": "b6005111-9253-4a9d-b72d-803d1893a74e",
+            "value": "tag",
+            "component": "_table_head"
+          },
+          {
+            "_uid": "4801e3e2-83d1-47de-9254-8c2a12bd0bdf",
+            "value": "link",
+            "component": "_table_head"
+          },
+          {
+            "_uid": "3275d356-a24e-4fe7-bfa2-bc9e309a5a95",
+            "value": "icon",
+            "component": "_table_head"
+          }
+        ],
+        "fieldtype": "table"
+      },
+      "component": "Connect"
+    },
+    "component_id": 65620909931364,
+    "space_id": 285533317819926,
+    "created_at": "2025-07-13T11:27:53.070Z",
+    "updated_at": "2025-07-13T11:27:53.070Z",
+    "image": "",
+    "color": "",
+    "icon": "",
+    "description": ""
+  },
+  {
+    "id": 68469663957140,
+    "name": "menu",
+    "preset": {
+      "_uid": "0b1f1442-7950-4734-b723-a587361f56c8",
+      "menu": {
+        "tbody": [
+          {
+            "_uid": "3950b525-6297-46ab-aae5-4fdf9e4080ac",
+            "body": [
+              {
+                "_uid": "8a2ad679-29ac-45a5-bfd5-bfeaabf0b5e5",
+                "value": "projects",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "f3f49c0c-73eb-4195-92c8-54e6cbe4307e",
+                "value": "Projects",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "631a4db1-d089-4078-8f67-c413d1fb7251",
+                "value": "One",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "_uid": "10ee26fb-759d-4b06-8b2c-b436d9968431",
+            "body": [
+              {
+                "_uid": "e9839dbb-70ab-49fc-8e53-79341a06ffdb",
+                "value": "techstack",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "017958a7-97bf-497a-b9f1-5e68e0040846",
+                "value": "Tech Stack",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "b50b4a55-8beb-4627-9da4-bd199de9cd77",
+                "value": "Four",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "_uid": "9a6a6cd4-e127-433c-a8be-cac3d82528e5",
+            "body": [
+              {
+                "_uid": "3dffbb1a-daf1-445a-9d6c-87aafed02371",
+                "value": "connect",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "482378bf-724d-4d8e-aaa5-11a00953b9b2",
+                "value": "Connect",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "677a91a4-8ba7-4a03-ae7e-ad29e32c149e",
+                "value": "Five",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "body": [
+              {
+                "value": "client",
+                "component": "_table_col"
+              },
+              {
+                "value": "Clients",
+                "component": "_table_col"
+              },
+              {
+                "value": "Three",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "body": [
+              {
+                "value": "service",
+                "component": "_table_col"
+              },
+              {
+                "value": "Services",
+                "component": "_table_col"
+              },
+              {
+                "value": "Two",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          }
+        ],
+        "thead": [
+          {
+            "_uid": "149637be-040d-4a11-a08b-d39c4df0939a",
+            "value": "id",
+            "component": "_table_head"
+          },
+          {
+            "_uid": "bf751168-90e5-4544-b850-a75519d8f8d5",
+            "value": "title",
+            "component": "_table_head"
+          },
+          {
+            "_uid": "3c4a4167-a007-4a8c-aecc-5a7a7e2356d0",
+            "value": "component",
+            "component": "_table_head"
+          }
+        ],
+        "fieldtype": "table"
+      },
+      "component": "Menu"
+    },
+    "component_id": 66420357804858,
+    "space_id": 285533317819926,
+    "created_at": "2025-07-13T11:23:46.551Z",
+    "updated_at": "2025-07-13T11:27:07.277Z",
+    "image": "",
+    "color": "#dfe3e8",
+    "icon": "",
+    "description": "Preset data fro menu"
+  },
+  {
+    "id": 68471598010523,
+    "name": "profile",
+    "preset": {
+      "_uid": "6ffa249d-0573-4b85-ad18-0cb1939a6383",
+      "title": "Hello, Im John Doe",
+      "photoUrl": {
+        "id": "",
+        "url": "https://www.svgrepo.com/show/354113/nextjs-icon.svg",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "https://www.svgrepo.com/show/354113/nextjs-icon.svg"
+      },
+      "biography": {
+        "tbody": [
+          {
+            "_uid": "a00546a2-ae06-4aab-981a-9748c617fe2e",
+            "body": [
+              {
+                "_uid": "9da6d252-4c75-491e-9d6c-50ca7a66a3a5",
+                "value": "example bio",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "_uid": "83f9eec1-fed4-40f7-aded-3c078e3c18fd",
+            "body": [
+              {
+                "_uid": "6b4fe8d2-2c6b-4a05-8b69-5ee4ffbe17ef",
+                "value": "example second bio",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          }
+        ],
+        "thead": [
+          {
+            "_uid": "bfcc835e-3b03-4ac0-ba15-af495a8a19ac",
+            "value": "bio",
+            "component": "_table_head"
+          }
+        ],
+        "fieldtype": "table"
+      },
+      "component": "Profile"
+    },
+    "component_id": 64935881646761,
+    "space_id": 285533317819926,
+    "created_at": "2025-07-13T11:31:38.732Z",
+    "updated_at": "2025-07-13T11:31:38.732Z",
+    "image": "",
+    "color": "",
+    "icon": "",
+    "description": ""
+  },
+  {
+    "id": 68471121281177,
+    "name": "project",
+    "preset": {
+      "_uid": "f88d896e-7079-4d0f-a05c-6c771ee9ba24",
+      "Project": {
+        "tbody": [
+          {
+            "_uid": "682c792d-40f5-495c-b5ce-d1c586d7c49e",
+            "body": [
+              {
+                "_uid": "0f6762c9-f821-411a-84a9-09996b4b9721",
+                "value": "https://www.rust-lang.org/logos/rust-logo-512x512.png",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "5097342d-a75e-4494-ab3b-55203e3adcb4",
+                "value": "Rust KVM",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "a34d75ba-81f4-4ac9-a40c-78978be1ac73",
+                "value": "Rust based key-value in memory database",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "1e9770da-cdbf-4bc7-9422-5c337143f1ac",
+                "value": "https://opengraph.githubassets.com/bace6a9e134cf64008e38917b89d9ea9d696e3ec207f36abe7266e45dd5da5f5/antaresrvish/rust-kvm",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "4e30002c-00ec-4844-9738-1760b09e0603",
+                "value": "https://github.com/test/rust-kvm",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "_uid": "1f3d88c9-1d2c-4002-b8f6-701e42ec8a90",
+            "body": [
+              {
+                "_uid": "b60754e2-9022-45d2-9294-d31421a23ad5",
+                "value": "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "99914e7d-a456-480d-9a56-d02747c5e90d",
+                "value": "Know AI",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "73dab11f-d108-4344-afee-698cbd278252",
+                "value": "Basic gemini wrapper application for education\n",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "9519fc6f-7eb3-41ab-85f6-e93aa71745cf",
+                "value": "https://opengraph.githubassets.com/8a011ea231a447715d59bcf8971fc301e6ef49d94925d03fd66099430a49bced/Kirac-Borsa-Istanbul-MTAL/know-ai",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "232857ee-4a1f-443d-b461-d53ce2465edd",
+                "value": "https://github.com/test/know-ai",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "_uid": "eb479a1b-8ca9-40cf-a938-fcc5e2547a95",
+            "body": [
+              {
+                "_uid": "18150bf7-60bf-4c88-9494-d85d2e6cd2ba",
+                "value": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "a1b9a15f-682a-4aba-9c6a-16fdce3788e9",
+                "value": "Osilus Scraper",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "e851a702-62ad-4f92-8e07-aec751c6fb7f",
+                "value": "A basic typescript based scraper for educational purposes",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "45e46283-20bd-4f7f-a019-7b73d2fcaae5",
+                "value": "https://opengraph.githubassets.com/217f146314a79280cf67b112370f3302a614ac00baf73e30c5e3011086b42dff/mesa-osilus/osilus-scraper",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "6e995335-039b-455b-9af2-dbd85ef734ad",
+                "value": "https://github.com/test/osilus-scraper",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          }
+        ],
+        "thead": [
+          {
+            "_uid": "72c42a36-aecb-41d5-b05e-42d07a3e9799",
+            "value": "iconUrl",
+            "component": "_table_head"
+          },
+          {
+            "_uid": "b2d0af59-7859-45fe-8c22-1a07e757969b",
+            "value": "title",
+            "component": "_table_head"
+          },
+          {
+            "_uid": "de3bdc7e-8ffe-4202-a1ef-fd17b7ad101e",
+            "value": "description",
+            "component": "_table_head"
+          },
+          {
+            "_uid": "55b0822d-a263-4853-91bb-9f2707601151",
+            "value": "photoUrl",
+            "component": "_table_head"
+          },
+          {
+            "_uid": "534bc864-2495-4175-8932-7772ace87732",
+            "value": "link",
+            "component": "_table_head"
+          }
+        ],
+        "fieldtype": "table"
+      },
+      "component": "Project"
+    },
+    "component_id": 65283787981364,
+    "space_id": 285533317819926,
+    "created_at": "2025-07-13T11:29:42.342Z",
+    "updated_at": "2025-07-13T11:30:22.534Z",
+    "image": "",
+    "color": "",
+    "icon": "",
+    "description": ""
+  },
+  {
+    "id": 68471037149336,
+    "name": "services",
+    "preset": {
+      "_uid": "d291b215-2162-4893-b110-f901a28cc8e5",
+      "services": {
+        "tbody": [
+          {
+            "_uid": "7860e0b7-8df2-4a26-9191-73292ccd800b",
+            "body": [
+              {
+                "_uid": "2ebac32e-b7bf-44aa-86e3-c24ce117b966",
+                "value": "Next.js + Storyblok/Headless CMS Website",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "92c948df-0520-4c64-8b8b-3f2c281c4d31",
+                "value": "500",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "_uid": "73206538-73a1-47bb-9536-8a67adb3b415",
+            "body": [
+              {
+                "_uid": "1b8c0b44-4790-4a22-8ee1-d1b8e1c99012",
+                "value": "Node.js / TypeScript REST API",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "5102fd0e-6082-41ab-81eb-f71711c7b588",
+                "value": "350",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "_uid": "e909fcce-1d55-4a06-acaf-4cb0f059ca4b",
+            "body": [
+              {
+                "_uid": "4ffd678c-d030-4116-b7d6-0a7213633ab3",
+                "value": "Custom Hackintosh EFI Build & Support (Dell/Lenovo)",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "32bf301c-87b5-4471-88f1-d07068e01b43",
+                "value": "50",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "_uid": "ccb770fb-6c5e-43de-8767-49c5cd8273db",
+            "body": [
+              {
+                "_uid": "414b796b-3134-4944-8478-f47c68372ba2",
+                "value": "Embedded Firmware for PIC / ESP8266 IoT Devices",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "5f211fd3-9586-4971-8e67-ea0bc1d1a396",
+                "value": "200",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "_uid": "21531b24-af3b-4451-8a3d-fe00c4f9b3eb",
+            "body": [
+              {
+                "_uid": "76cebd63-3da1-4811-8372-8b731d182af0",
+                "value": "Desktop Utility or Tooling (C#/Electron)",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "1725d887-76be-4509-952e-56daa453278f",
+                "value": "200",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          }
+        ],
+        "thead": [
+          {
+            "_uid": "a43a5821-b59f-4948-9279-cfd91e4542b7",
+            "value": "title",
+            "component": "_table_head"
+          },
+          {
+            "_uid": "89983721-705b-4431-9a07-9426497d7891",
+            "value": "price",
+            "component": "_table_head"
+          }
+        ],
+        "fieldtype": "table"
+      },
+      "component": "Service",
+      "emailLink": "test@gmail.com",
+      "bookCallLink": "#"
+    },
+    "component_id": 65613666020191,
+    "space_id": 285533317819926,
+    "created_at": "2025-07-13T11:29:21.804Z",
+    "updated_at": "2025-07-13T11:29:21.804Z",
+    "image": "",
+    "color": "",
+    "icon": "",
+    "description": ""
+  },
+  {
+    "id": 68471389544602,
+    "name": "social",
+    "preset": {
+      "_uid": "39f56d57-5a06-4fb1-85e5-6c55e34a436e",
+      "component": "Social",
+      "socialLinks": {
+        "tbody": [
+          {
+            "_uid": "260aef76-03bd-42e8-8039-8bdd176a6361",
+            "body": [
+              {
+                "_uid": "9e724641-4706-4cdd-837a-a1347c1ce7b5",
+                "value": "Github",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "76ea7977-8334-447e-b9c4-ec0027cace17",
+                "value": "https://www.github.com/test",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "d68dd568-a9df-4a72-8d8a-ba1a29ca1c15",
+                "value": "Github",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "_uid": "8e81cfbe-d006-4d4c-bf57-bfd6bccd9c50",
+            "body": [
+              {
+                "_uid": "8d092cb4-db95-4698-b3b2-8fe6ac568d3c",
+                "value": "Linkedin",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "309b4c4a-bb36-408c-a0bb-97d939af6d98",
+                "value": "https://www.linkedin.com/in/test",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "29c07c99-4636-4c07-aed8-28fb1d134441",
+                "value": "Linkedin",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "_uid": "fa840122-8ab9-4e2f-8dc3-0480d7fc3c8a",
+            "body": [
+              {
+                "_uid": "d02ee49f-821b-462c-ac8b-12cb39b8309f",
+                "value": "Youtube",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "b2f3a55e-71cd-46a9-9438-445098d5aa30",
+                "value": "https://www.youtube.com/@test",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "014de364-46f4-448d-a2fa-82e67f73bb2e",
+                "value": "Youtube",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "_uid": "dae4995b-8883-4174-8c40-ccd88f1fae99",
+            "body": [
+              {
+                "_uid": "29817434-1f18-45b5-9a6c-d70a3aee570d",
+                "value": "Mail",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "cd2adafe-aeab-4bbf-a6df-6123521261f9",
+                "value": "mailto:test@gmail.com",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "a03d5d3d-75e4-4b4b-a432-9f9cc33c08bb",
+                "value": "RegEnvelope",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          }
+        ],
+        "thead": [
+          {
+            "_uid": "466788b1-909c-48ef-92de-931685937fcf",
+            "value": "tooltip",
+            "component": "_table_head"
+          },
+          {
+            "_uid": "35dd2701-9c4e-49c6-bea0-76614f590b3a",
+            "value": "link",
+            "component": "_table_head"
+          },
+          {
+            "_uid": "fe3a13c8-3d3f-4124-8554-208fa888da2d",
+            "value": "icon",
+            "component": "_table_head"
+          }
+        ],
+        "fieldtype": "table"
+      }
+    },
+    "component_id": 65037241518437,
+    "space_id": 285533317819926,
+    "created_at": "2025-07-13T11:30:47.837Z",
+    "updated_at": "2025-07-13T11:30:47.837Z",
+    "image": "",
+    "color": "",
+    "icon": "",
+    "description": ""
+  },
+  {
+    "id": 68470785216662,
+    "name": "techstack",
+    "preset": {
+      "_uid": "297ef2b9-24cd-49ac-90a2-70f7e4b06b9d",
+      "component": "Tech Stack",
+      "tech_stack": {
+        "tbody": [
+          {
+            "_uid": "a0a2946b-1fcb-452a-a129-7019f7bbf549",
+            "body": [
+              {
+                "_uid": "f1da8bf3-3343-47c3-8c73-295e9f141e58",
+                "value": "Rust",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "d9e026a0-adb3-4249-915d-5f395fce0948",
+                "value": "https://www.rust-lang.org/logos/rust-logo-512x512.png",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "ee966daf-2e29-432b-b47c-21c43d99840f",
+                "value": "https://www.rust-lang.org",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "_uid": "29b24a16-5944-4814-a833-820368feae8a",
+            "body": [
+              {
+                "_uid": "76e18715-3ce5-4527-9adb-8a15aeb6421e",
+                "value": "TypeScript",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "7c37cd3f-e3c0-4298-9f05-0a1ad3516fd4",
+                "value": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "732beee6-2e1b-4580-9f29-6ed12aba7ffe",
+                "value": "https://www.typescriptlang.org",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "_uid": "56dc2e03-fb17-4161-889d-5dcfa4254b54",
+            "body": [
+              {
+                "_uid": "854c5a9e-4d77-46b9-bc25-dd36623277a2",
+                "value": "Java",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "abc57d49-cf25-41ae-b831-876408765876",
+                "value": "https://cdn-icons-png.flaticon.com/512/226/226777.png",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "6dfd9b75-3fbe-4f1c-a398-03b6f4318012",
+                "value": "https://www.java.com",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "_uid": "8f4e065d-ba8c-4a83-bffe-4533d1557ed2",
+            "body": [
+              {
+                "_uid": "ff7688db-0c72-4586-902a-2a863fb3990e",
+                "value": "C#",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "7d5728e0-ad84-45cc-b3d7-93b8d0f1526d",
+                "value": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/C_Sharp_Logo_2023.svg/1200px-C_Sharp_Logo_2023.svg.png",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "534bfd68-f290-4e27-86fd-df31f0fca188",
+                "value": "https://learn.microsoft.com/tr-tr/dotnet/csharp/",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "_uid": "24cc621f-08f8-49f2-9aca-6ac1bda0b9c7",
+            "body": [
+              {
+                "_uid": "be3c2be3-8119-410e-ae94-b06e3c9792e1",
+                "value": "Node.js",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "7d12c931-a1ad-4b0b-b253-659e9dacb3f1",
+                "value": "https://images.seeklogo.com/logo-png/27/1/node-js-logo-png_seeklogo-273749.png",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "627962db-827f-4360-87a8-ea91c076f167",
+                "value": "https://www.nodejs.org",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "_uid": "88d85c13-d198-4c8f-baa8-0d7606a13493",
+            "body": [
+              {
+                "_uid": "0b4b4799-a1fb-4fb8-bcb4-c65a17c171a5",
+                "value": "Express.js",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "c8e4ae83-6c4c-472d-a2c8-bbf980532b08",
+                "value": "https://images.seeklogo.com/logo-png/27/1/node-js-logo-png_seeklogo-273749.png",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "ac66c243-4585-41b5-a4d9-811cf5483461",
+                "value": "https://expressjs.com",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "_uid": "8bf710ea-0804-4b46-98e4-5de8390401a8",
+            "body": [
+              {
+                "_uid": "37ee0dd8-92ef-49e7-ac9a-2fe191be7de3",
+                "value": "Fastify.js",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "081fdee2-a3ab-4017-b655-5bc869ab64ef",
+                "value": "https://pbs.twimg.com/profile_images/970652657231847424/mWKpZoM4_400x400.jpg",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "80305e77-9d6b-474c-8176-35717d02ea1f",
+                "value": "https://www.fastify.io",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "_uid": "a8777f69-2b32-4d26-8839-584e79434b79",
+            "body": [
+              {
+                "_uid": "0ddcebe1-cb48-4141-a730-a974ee304e35",
+                "value": "Assembly",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "4454b3ff-f7b3-48d6-8662-c2a9181e9394",
+                "value": "https://user-images.githubusercontent.com/103866722/194773833-8571f323-4fa8-4036-a51c-57b9d29c683b.svg",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "d7fbc174-72c1-4265-96bd-a0a80bd74726",
+                "value": "#",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "_uid": "7b3d8c4b-ebfb-4957-8327-9694c1d619cc",
+            "body": [
+              {
+                "_uid": "c88e7e8d-7346-479d-b11d-6e1fb2599e29",
+                "value": "Python",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "2c70e408-2e82-4b82-8433-db1c3b3adb2e",
+                "value": "https://images.icon-icons.com/2699/PNG/512/python_logo_icon_168886.png",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "7a3adabf-a021-4214-894a-6065b7ce925f",
+                "value": "https://www.python.org",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          }
+        ],
+        "thead": [
+          {
+            "_uid": "62d007f6-8733-4f39-98fd-468b2aee109b",
+            "value": "title",
+            "component": "_table_head"
+          },
+          {
+            "_uid": "dbd8c345-a966-44d5-b000-450606ff0219",
+            "value": "photoUrl",
+            "component": "_table_head"
+          },
+          {
+            "_uid": "078d4b79-df38-4469-95b3-c1db61712b19",
+            "value": "url",
+            "component": "_table_head"
+          }
+        ],
+        "fieldtype": "table"
+      }
+    },
+    "component_id": 65619290004323,
+    "space_id": 285533317819926,
+    "created_at": "2025-07-13T11:28:20.296Z",
+    "updated_at": "2025-07-13T11:28:20.296Z",
+    "image": "",
+    "color": "",
+    "icon": "",
+    "description": ""
+  }
+]
