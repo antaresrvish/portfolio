@@ -6,10 +6,12 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "storyblok:push": "node utils/storyblok-push.js"
   },
   "dependencies": {
     "@storyblok/react": "^5.1.2",
+    "dotenv": "^16.6.1",
     "next": "15.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
