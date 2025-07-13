@@ -31,8 +31,6 @@ async function pushStoryblokComponents() {
     console.log(`Renaming files directory to ${spaceId}...`);
     fs.renameSync(filesDir, spaceDir);
 
-    process.chdir(componentsDir);
-
     console.log(`Pushing components to Storyblok space ${spaceId}...`);
     const command = `storyblok comp push --space ${spaceId}`;
     
