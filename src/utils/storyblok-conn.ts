@@ -173,7 +173,6 @@ export const getServerSideProps: GetServerSideProps = async () => {
                     break;
                 }
                 default: {
-                    // Set default/error values for all data types if not already set
                     if (!profileData) {
                         profileData = {
                             title: "Error - No data returned",

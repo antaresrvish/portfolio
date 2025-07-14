@@ -1,4 +1,4 @@
-export interface Menu {
+export interface IMenu {
     id: string;
     title: string;
     component: ComponentType<any>;

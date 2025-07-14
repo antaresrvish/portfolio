@@ -12,6 +12,7 @@
   "dependencies": {
     "@storyblok/react": "^5.1.2",
     "dotenv": "^16.6.1",
+    "motion": "^12.23.5",
     "next": "15.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
