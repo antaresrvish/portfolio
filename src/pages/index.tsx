@@ -6,10 +6,10 @@ import { MenuProvider } from "@/contexts/menu-context";
 import StoryblokProvider from "@/components/storyblok-provider";
 import { Outfit } from "next/font/google";
 import BlurFooter from "@/components/blur-footer";
-import { GetServerSideProps } from 'next';
+import { GetStaticProps } from 'next';
 import { ISocialLinks } from "@/types/components/social-links";
 import { IProfile } from "@/types/components/profile";
-import { getServerSideProps as getStoryblokServerSideProps } from "@/utils/storyblok-conn";
+import getStoryblokStaticProps from "@/utils/storyblok-conn";
 import { IOne } from "@/types/components/layers/one";
 import { ITwoService } from "@/types/components/layers/two";
 import { IThree } from "@/types/components/layers/three";
@@ -17,7 +17,6 @@ import { IFive } from "@/types/components/layers/five";
 import { IFour } from "@/types/components/layers/four";
 import { IMenuItem } from "@/types/components/menu-item";
 import { ICard } from "@/types/components/templates/card";
-export const runtime = 'experimental-edge';
 
 const geistSans = Outfit({
   variable: "--font-geist-sans",
@@ -46,12 +45,16 @@ export default function Home({ profileData, socialData, layerOne, layerTwo, laye
     'Five': layerFive
   };
   
-  menuData.forEach((menuItem) => {
-    const layerDataForComponent = componentToLayerMap[menuItem.component];
-    if (layerDataForComponent) {
-      layerData[menuItem.id] = layerDataForComponent;
-    }
-  });
+  if (menuData && Array.isArray(menuData)) {
+    menuData.forEach((menuItem) => {
+      if (menuItem && menuItem.component && menuItem.id) {
+        const layerDataForComponent = componentToLayerMap[menuItem.component];
+        if (layerDataForComponent) {
+          layerData[menuItem.id] = layerDataForComponent;
+        }
+      }
+    });
+  }
 
   return (
     <StoryblokProvider>
@@ -72,5 +75,5 @@ export default function Home({ profileData, socialData, layerOne, layerTwo, laye
   );
 }
 
-export const getServerSideProps: GetServerSideProps = getStoryblokServerSideProps;
+export const getStaticProps: GetStaticProps = getStoryblokStaticProps;
 

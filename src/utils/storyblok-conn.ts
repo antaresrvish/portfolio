@@ -1,4 +1,4 @@
-import { GetServerSideProps } from "next";
+import { GetStaticProps } from "next";
 import { getStoryblokApi } from '@/lib/storyblok';
 
 import { IProfile } from "@/types/components/profile";
@@ -12,11 +12,30 @@ import { IMenuItem } from "@/types/components/menu-item";
 import { Profile, Social, Project, Service, Client, TechStack, Connect, Menu } from "@/types/components/storyblok/space-types/storyblok-components";
 
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
     try {
-        const storyblokApi = await getStoryblokApi();
-        const raw = await storyblokApi.get(`cdn/stories/data`, { version: 'draft' });
+        const timeoutPromise = new Promise((_, reject) => {
+            setTimeout(() => reject(new Error('API request timeout')), 8000); // 8 second timeout
+        });
+
+        const apiPromise = (async () => {
+            const storyblokApi = await getStoryblokApi();
+            return await storyblokApi.get(`cdn/stories/data`, { 
+                version: process.env.NODE_ENV === 'development' ? 'draft' : 'published'
+            });
+        })();
+
+        const raw: any = await Promise.race([apiPromise, timeoutPromise]);
+        
+        if (!raw?.data?.story?.content?.body) {
+            throw new Error('Invalid data structure received from Storyblok');
+        }
+        
         const data = raw.data.story.content.body;
+
+        if (!Array.isArray(data)) {
+            throw new Error('Expected data to be an array');
+        }
 
         let profileData: IProfile | null = null;
         let socialData: ISocialLinks = [];
@@ -28,6 +47,10 @@ export const getServerSideProps: GetServerSideProps = async () => {
         let menuData: IMenuItem = [];
 
         data.forEach((item: Profile | Social | Project | Service | Client | TechStack | Connect | Menu, index: number) => {
+            if (!item || !item.component) {
+                return;
+            }
+            
             switch (item.component) {
                 case "Profile": {
                     const profileItem = item as Profile;
@@ -235,6 +258,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
                 layerFive: connectData,
                 menuData: menuData
             },
+            revalidate: 3600
         };
     } catch (error) {
         console.error("Storyblok fetch error:", error);
@@ -262,11 +286,12 @@ export const getServerSideProps: GetServerSideProps = async () => {
                 layerFour: [],
                 layerFive: [],
                 menuData: []
-            }
+            },
+            revalidate: 60
         }
     }
 
 
 };
 
-export default getServerSideProps;
+export default getStaticProps;
