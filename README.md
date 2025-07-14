@@ -1,68 +1,56 @@
-# Portfolio Project
+# 🚀 Portfolio Project
 
-This is a [Storyblok](https://www.storyblok.com/) CMS-based portfolio project built with [Next.js](https://nextjs.org). It features an extensible architecture that is open to adding new components and further development.
+A modern, dynamic portfolio website built with [Next.js](https://nextjs.org) and powered by [Storyblok](https://www.storyblok.com/) CMS. This project features a flexible, component-based architecture designed for easy customization and scalability.
 
-## Setup
+## 🛠️ Tech Stack
 
-### 1. Create Storyblok Space
-- Login to your [Storyblok](https://www.storyblok.com/) account
-- Create a new space
+- **Framework**: Next.js 15 with React 19
+- **CMS**: Storyblok
+- **Styling**: Tailwind CSS v4 with PostCSS
+- **Language**: TypeScript
+- **Icons**: React Icons
+- **Build Tool**: Turbopack (Next.js)
 
-### 2. Environment Configuration
-Copy the information from `.env.example` to your `.env` file:
+## 📖 Documentation
 
-```bash
-cp .env.example .env
+For detailed documentation and guides, visit [Portfolio Documentation](https://portfolio-33.gitbook.io/portfolio-docs).
+
+## 📋 Prerequisites
+
+- Node.js 18.17 or later
+- npm, yarn, or pnpm
+- Storyblok account and space
+
+## 📁 Project Structure
+
+```
+src/
+├── components/          # Reusable UI components
+│   ├── effects/        # Animation and visual effects
+│   ├── layers/         # Layout layer components
+│   ├── templates/      # Page templates
+│   └── utils/          # Utility components
+├── contexts/           # React context providers
+├── lib/               # External library configurations
+├── pages/             # Next.js pages (Pages Router)
+├── styles/            # Global styles
+├── types/             # TypeScript type definitions
+└── utils/             # Utility functions
 ```
 
-### 3. Storyblok CLI Installation
-```bash
-npm install -g storyblok
-storyblok login
-```
+## 📜 Available Scripts
 
-### 4. Push Components to Storyblok
-After login:
-```bash
-npm run storyblok:push
-```
+- `npm run dev` - Start development server with Turbopack
+- `npm run build` - Create production build
+- `npm run start` - Start production server
+- `npm run storyblok:push` - Push components to Storyblok
 
-This will push components and presets to your space.
 
-### 5. Start Development Server
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
+## 🤝 Contributing
 
-### 6. Build for Production
-To build the application for production:
+Feel free to contribute :)
 
-```bash
-npm run build
-# or
-yarn build
-# or
-pnpm build
-# or
-bun build
-```
+## 🙋‍♂️ Support
 
-## Usage
-
-You can make changes by adding components and selecting their presets in Storyblok CMS. The project will update in real-time.
-
-## Features
-
-- Storyblok CMS integration
-- Next.js based
-- TypeScript support
-- Tailwind CSS
-- Component-based architecture
+If you have any questions or need help with setup, please refer to the [documentation](https://portfolio-33.gitbook.io/portfolio-docs) or open an issue in this repository.
