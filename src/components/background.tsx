@@ -23,7 +23,7 @@ interface BackgroundProps {
     patternAlpha?: number;
   };
 }
-//
+
 
 const Background: React.FC<BackgroundProps> = ({
   useBeams = false,

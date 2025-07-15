@@ -94,7 +94,7 @@ export const getStaticProps: GetStaticProps = async () => {
                         projectItem.Project?.tbody.forEach(row => {
                             if (row.body && row.body.length > 0) {
                                 projectData.push({
-                                    iconUrl: row.body[0]?.value || "",
+                                    icon: row.body[0]?.value || "",
                                     title: row.body[1]?.value || "",
                                     description: row.body[2]?.value || "",
                                     photoUrl: row.body[3]?.value || "",

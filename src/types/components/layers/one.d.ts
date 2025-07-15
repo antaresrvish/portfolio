@@ -1,5 +1,5 @@
 interface IOneCard {
-    iconUrl?: string;
+    icon?: string;
     title: string;
     description: string;
     photoUrl: string;

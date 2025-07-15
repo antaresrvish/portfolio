@@ -1,4 +1,5 @@
 import {IOne} from '@/types/components/layers/one'
+import IconUtility from '../utils/icon-util';
 
 export default function One({ data = [] }: { data: IOne}) {
     return (
@@ -9,13 +10,7 @@ export default function One({ data = [] }: { data: IOne}) {
                         <div className="w-full sm:w-1/2 px-4 sm:pl-8 sm:pr-4 pt-6 sm:pt-8 flex flex-col justify-between">
                             <div>
                                 <div className="shadow-2xl/80 shadow-black w-8 h-8">
-                                    {item.iconUrl ? (
-                                        <img src={item.iconUrl} alt="Icon" className="rounded-sm" />
-                                    ) : (
-                                        <div className="rounded-lg w-full h-full flex items-center justify-center border-1 border-gray-100">
-                                            <span className="text-sm text-gray-400">?</span>
-                                        </div>
-                                    )}
+                                    <IconUtility data={{value: item.icon ?? "", className: "inline-block text-4xl mr-3.5", isTechStack: true}}/>
                                 </div>
                                 <div className="text-lg sm:text-xl font-medium mt-4 text-green-200/90">{item.title}</div>
                                 <div className="text-sm font-normal text-gray-300 mt-2">{item.description}</div>

@@ -1,10 +1,10 @@
-import * as fa6 from "react-icons/fa6";
+import { Icon } from "@iconify/react";
 import { IIconUtility } from "@/types/components/utils/icon-util";
 
 export default function IconUtility ({ data }: { data:IIconUtility}) {
-    const iconName = ("Fa" + data.value) as keyof typeof fa6;
-    const IconComponent = fa6[iconName] ? fa6[iconName] : fa6.FaQuestion
+    const iconSet = data.isTechStack ? 'logos' : 'simple-icons';
+    const iconName = `${iconSet}:${data.value}`;
     return (
-        <IconComponent className={data.className}></IconComponent>
+        <Icon icon={iconName} className={data.className} />
     )
 }

@@ -1,4 +1,3 @@
-import * as fa6 from "react-icons/fa6";
 import { BlurFade } from "./effects/blur-fade";
 import Tooltip from "./utils/tooltip";
 import { ISocialLinks } from "@/types/components/social-links";
@@ -12,7 +11,7 @@ export default function socialLinks({ data }: { data: ISocialLinks }) {
                     return (
                         <Tooltip key={item.tooltip} text={item.tooltip}>
                             <a href={item.link} target="_blank" className="text-green-200/50">
-                                    <IconUtility data={{value: item.icon, className: "inline-block w-5 h-5 mr-3.5"}}/>
+                                <IconUtility data={{ value: item.icon, className: "inline-block w-5 h-5 mr-3.5", isTechStack: false }} />
                             </a>
                         </Tooltip>
                     )
