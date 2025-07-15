@@ -11,7 +11,7 @@ export default function socialLinks({ data }: { data: ISocialLinks }) {
                 {data.map((item) => {
                     return (
                         <Tooltip key={item.tooltip} text={item.tooltip}>
-                            <a href={item.link} target="_blank" className="text-gray-900">
+                            <a href={item.link} target="_blank" className="text-green-200/50">
                                     <IconUtility data={{value: item.icon, className: "inline-block w-5 h-5 mr-3.5"}}/>
                             </a>
                         </Tooltip>

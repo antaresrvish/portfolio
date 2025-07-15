@@ -2,18 +2,18 @@ import { ITwoService } from "@/types/components/layers/two"
 
 export default function Two({ data = { services: [] } }: { data: ITwoService }) {
     return (
-        <div className="px-4">
+        <div className="">
             {data.services.map((item, index) => {
                 index = index + 1;
                 return (
-                    <div className="space-y-4">
-                        <div className="flex items-center justify-between py-4 border-b border-gray-100">
+                    <div className="space-y-4 mb-2">
+                        <div className="flex items-center bg-green-200/20 px-2  rounded-lg backdrop-blur-md justify-between py-4 border-b border-green-900/20">
                             <div className="flex items-center space-x-4">
                                 <span className="text-gray-400 font-mono">0{index}.</span>
-                                <h3 className="text-sm md:text-lg font-medium">{item.title}</h3>
+                                <h3 className="text-sm md:text-lg font-medium text-green-200/90">{item.title}</h3>
                             </div>
-                            <div className="px-2 w-[120px] shadow-md border-1 shadow-black/5 border-gray-100 rounded-full flex items-center py-1">
-                                <span className="text-gray-600 text-xs text-center">Starts from ${item.price}</span>
+                            <div className="px-2 w-[120px] shadow-md border-1 shadow-black/5 border-green-200/20 rounded-full flex items-center py-1">
+                                <span className="text-green-200/50 text-xs text-center">Starts from ${item.price}</span>
                             </div>
                         </div>
                     </div>
@@ -34,14 +34,14 @@ export default function Two({ data = { services: [] } }: { data: ITwoService }) 
                         </div>
                     </a>
                 </div>
-                <div className="group border border-black w-28 flex justify-center items-center py-1 rounded-full hover:bg-gray-900 hover:cursor-pointer duration-300 transition-colors">
+                <div className="group border border-green-200/20 w-28 flex justify-center items-center py-1 rounded-full hover:bg-green-900/40 hover:cursor-pointer duration-300 transition-colors">
                     <a href={data.emailLink} target="_blank" className="flex gap-2 items-center">
-                        <span className="text-sm font-medium text-black group-hover:text-white duration-300">Send email</span>
+                        <span className="text-sm font-medium text-green-200/50 group-hover:text-white duration-300">Send email</span>
                         <div className="w-4 h-4 group-hover:rotate-0 rotate-45 transition-transform duration-300 ease-in-out">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 256 256"
-                                className="w-full h-full fill-black group-hover:fill-white transition-colors duration-300">
+                                className="w-full h-full fill-green-200/50 group-hover:fill-white transition-colors duration-300">
                                 <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path>
                             </svg>
                         </div>

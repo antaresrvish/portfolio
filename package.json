@@ -10,19 +10,23 @@
     "storyblok:push": "node utils/storyblok-push.js"
   },
   "dependencies": {
+    "@react-three/drei": "^10.5.1",
+    "@react-three/fiber": "^9.2.0",
     "@storyblok/react": "^5.1.2",
     "dotenv": "^16.6.1",
     "motion": "^12.23.5",
     "next": "15.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-icons": "^5.5.0"
+    "react-icons": "^5.5.0",
+    "three": "^0.178.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/three": "^0.178.1",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

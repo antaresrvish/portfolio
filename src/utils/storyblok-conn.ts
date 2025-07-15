@@ -15,7 +15,7 @@ import { Profile, Social, Project, Service, Client, TechStack, Connect, Menu } f
 export const getStaticProps: GetStaticProps = async () => {
     try {
         const timeoutPromise = new Promise((_, reject) => {
-            setTimeout(() => reject(new Error('API request timeout')), 8000); // 8 second timeout
+            setTimeout(() => reject(new Error('API request timeout')), 8000);
         });
 
         const apiPromise = (async () => {

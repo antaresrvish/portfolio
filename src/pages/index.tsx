@@ -6,6 +6,7 @@ import { MenuProvider } from "@/contexts/menu-context";
 import StoryblokProvider from "@/components/storyblok-provider";
 import { Outfit } from "next/font/google";
 import BlurFooter from "@/components/blur-footer";
+import Background from "@/components/background";
 import { GetStaticProps } from 'next';
 import { ISocialLinks } from "@/types/components/social-links";
 import { IProfile } from "@/types/components/profile";
@@ -59,7 +60,26 @@ export default function Home({ profileData, socialData, layerOne, layerTwo, laye
   return (
     <StoryblokProvider>
       <MenuProvider menuData={menuData}>
-        <div className={`${geistSans.className} flex justify-center h-screen bg-grey-100 sm:px-10 px-6`}>
+        <Background 
+          useBeams={true}
+          useNoise={false}
+          beamsProps={{
+            beamWidth: 2,
+            beamHeight: 30,
+            beamNumber: 10,
+            lightColor: "#aeeccf",
+            speed: 2,
+            noiseIntensity: 0,
+            scale: 0.3,
+            rotation: 145
+          }}
+          noiseProps={{
+            patternSize: 1,
+            patternAlpha: 20,
+            patternRefreshInterval: 1
+          }}
+        />
+        <div className={`${geistSans.className} flex justify-center h-screen sm:px-10 px-6 relative z-10`}>
           <div className="flex flex-col md:w-[700px] w-full md:pt-24 pt-20">
             <div className="w-full flex flex-col">
               <Profile profile={profileData} />

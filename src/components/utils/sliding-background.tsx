@@ -40,7 +40,7 @@ export function SlidingBackground({ activeItem, className = "", children }: ISli
             ref={containerRef}
             className={`relative ${className}`}>
             <div
-                className={`absolute top-1 -left-2.5 bottom-2 bg-black rounded-full transition-all duration-500 ease-out ${
+                className={`absolute top-1 -left-2.5 bottom-2 bg-green-200/20 backdrop-blur-md rounded-full transition-all duration-500 ease-out ${
                     isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
                 }`}
                 style={{
