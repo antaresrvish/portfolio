@@ -1,8 +1,8 @@
-# 🚀 Portfolio Project
+# Portfolio Project
 
 A modern, dynamic portfolio website built with [Next.js](https://nextjs.org) and powered by [Storyblok](https://www.storyblok.com/) CMS. This project features a flexible, component-based architecture designed for easy customization and scalability.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework**: Next.js 15 with React 19
 - **CMS**: Storyblok
@@ -11,17 +11,17 @@ A modern, dynamic portfolio website built with [Next.js](https://nextjs.org) and
 - **Icons**: Iconify
 - **Build Tool**: Turbopack (Next.js)
 
-## 📖 Documentation
+## Documentation
 
 For detailed documentation and guides, visit [Portfolio Documentation](https://portfolio-33.gitbook.io/portfolio-docs).
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Node.js 18.17 or later
 - npm, yarn, or pnpm
 - Storyblok account and space
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -38,17 +38,17 @@ src/
 └── utils/             # Utility functions
 ```
 
-## 📜 Available Scripts
+## Available Scripts
 
 - `npm run dev` - Start development server with Turbopack
 - `npm run build` - Create production build
 - `npm run start` - Start production server
 - `npm run storyblok:push` - Push components to Storyblok
 
-## 🤝 Contributing
+## Contributing
 
 Feel free to contribute :)
 
-## 🙋‍♂️ Support
+## Support
 
 If you have any questions or need help with setup, please refer to the [documentation](https://portfolio-33.gitbook.io/portfolio-docs) or open an issue in this repository.
