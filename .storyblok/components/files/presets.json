@@ -1,6 +1,6 @@
 [
   {
-    "id": 68470885810327,
+    "id": 68553467097503,
     "name": "client",
     "preset": {
       "_uid": "397785a2-81f5-4f33-91e3-8dd2f75ff387",
@@ -111,42 +111,42 @@
       },
       "component": "Client"
     },
-    "component_id": 65618281044832,
-    "space_id": 285533317819926,
-    "created_at": "2025-07-13T11:28:44.855Z",
-    "updated_at": "2025-07-13T11:28:44.855Z",
+    "component_id": 68553461319164,
+    "space_id": 285759501662216,
+    "created_at": "2025-07-13T17:04:46.302Z",
+    "updated_at": "2025-07-13T17:04:46.302Z",
     "image": "",
     "color": "",
     "icon": "",
     "description": ""
   },
   {
-    "id": 68470673698965,
+    "id": 68553466950046,
     "name": "connect",
     "preset": {
-      "_uid": "087120f7-b29c-4e22-8177-9624af5b6857",
+      "_uid": "e16dfcb5-4d9e-4d5f-8fd0-2b7a422c5a00",
       "connect": {
         "tbody": [
           {
-            "_uid": "2e54d080-ef09-4906-9e8b-a4274ad1a764",
+            "_uid": "d97750ea-abe6-4027-b656-6420e9c820cd",
             "body": [
               {
-                "_uid": "17ecfc2d-2730-4bbd-9200-39d11445b0b6",
+                "_uid": "35654ffc-15c1-44b2-979d-af41006ba20b",
                 "value": "Github",
                 "component": "_table_col"
               },
               {
-                "_uid": "b02280fd-6241-487b-85cd-87689a63f4d7",
-                "value": "@antaresrvish",
+                "_uid": "220566b6-a801-4f4e-99ee-d3456a7a30d7",
+                "value": "@johndoe",
                 "component": "_table_col"
               },
               {
-                "_uid": "68800318-e541-445f-84f7-51463ac97276",
-                "value": "https://www.github.com/antaresrvish",
+                "_uid": "dcb762a1-e54d-4113-81ee-bc957db0fdb7",
+                "value": "https://www.github.com/johndoe",
                 "component": "_table_col"
               },
               {
-                "_uid": "acb0b1c7-49c6-48a1-81fd-7e93ffdfb68a",
+                "_uid": "48c67434-2724-4d02-b652-cf9ee90062aa",
                 "value": "github",
                 "component": "_table_col"
               }
@@ -154,25 +154,25 @@
             "component": "_table_row"
           },
           {
-            "_uid": "90ca0017-0505-4666-bf12-2a4100e2f639",
+            "_uid": "8dc5dd4c-bfc9-4b29-8415-2a6d538ef312",
             "body": [
               {
-                "_uid": "b6153c8d-7989-4eb7-9afb-2dcd9efdcd16",
+                "_uid": "7e61ba8d-129f-4c91-813b-5c0418ba1f6e",
                 "value": "Linkedin",
                 "component": "_table_col"
               },
               {
-                "_uid": "e53e99a6-5f66-45ef-b8d7-b227e36cbb16",
-                "value": "in/antaresrvish",
+                "_uid": "d0fe7d7e-4533-417b-b2cf-4376dd3fe17e",
+                "value": "in/johndoe",
                 "component": "_table_col"
               },
               {
-                "_uid": "039017b6-f03b-4ea6-bcb1-5f7768c11b4e",
-                "value": "https://www.linkedin.com/in/antaresrvish",
+                "_uid": "5112dbf7-8f09-4058-bc28-89b75ade0ada",
+                "value": "https://www.linkedin.com/in/",
                 "component": "_table_col"
               },
               {
-                "_uid": "7c98719d-014f-4600-b9c0-74887be5c091",
+                "_uid": "d1917064-9ed4-4a57-b406-4de9007d4a0c",
                 "value": "linkedin",
                 "component": "_table_col"
               }
@@ -180,25 +180,25 @@
             "component": "_table_row"
           },
           {
-            "_uid": "91b231af-c7ab-422f-8c70-89b97025e539",
+            "_uid": "05c89fb4-9fd9-45c5-8dcf-2ad04babb669",
             "body": [
               {
-                "_uid": "636551b8-3d12-4343-ac07-37910ae07ccb",
+                "_uid": "21fa5534-3763-4866-a82a-ec1f5a784044",
                 "value": "X",
                 "component": "_table_col"
               },
               {
-                "_uid": "8c12b5ff-8b44-49fb-8e0a-1496837d6dba",
-                "value": "@antaresrvish",
+                "_uid": "32118ee0-203f-4933-be56-e7746fc28c9f",
+                "value": "@johndoe",
                 "component": "_table_col"
               },
               {
-                "_uid": "a7e9752e-bc79-4eec-ad67-d4f6cc16c99b",
-                "value": "https://x.com/antaresrvish",
+                "_uid": "3b80398e-421e-4d83-9d1b-1aec08068aad",
+                "value": "https://x.com/",
                 "component": "_table_col"
               },
               {
-                "_uid": "9245646b-1551-44a3-a2a2-3c988b8ab890",
+                "_uid": "c53103f6-0b2a-4521-a560-01a7a3f0be3e",
                 "value": "x",
                 "component": "_table_col"
               }
@@ -206,25 +206,25 @@
             "component": "_table_row"
           },
           {
-            "_uid": "562fceef-fc0e-4b7a-8ab1-734b2fcfa5de",
+            "_uid": "dbb24b73-7ad4-4a02-b800-355dd2c1b605",
             "body": [
               {
-                "_uid": "cd65ec57-b763-4e0a-9bae-6e796b6db4e6",
+                "_uid": "3a1c47e0-10a4-4f07-b7d9-d8ef880fd71e",
                 "value": "Youtube",
                 "component": "_table_col"
               },
               {
-                "_uid": "b536f869-1c95-4f5f-80a6-c532012900e2",
-                "value": "@antaresrvish",
+                "_uid": "579e78e3-f19b-4931-98dd-0596e5269458",
+                "value": "@johndoe",
                 "component": "_table_col"
               },
               {
-                "_uid": "3a00b81a-ea9a-4a3a-9cec-a9a2855724b2",
-                "value": "https://www.youtube.com/@antaresrvish",
+                "_uid": "95be32bb-135f-4003-b931-e9784b2cc77e",
+                "value": "https://www.youtube.com/@",
                 "component": "_table_col"
               },
               {
-                "_uid": "d302d3d3-16cb-4bc7-b692-f5d6f6edab9f",
+                "_uid": "6ae8c881-4476-4c9a-b5f1-e45114110738",
                 "value": "youtube",
                 "component": "_table_col"
               }
@@ -232,25 +232,25 @@
             "component": "_table_row"
           },
           {
-            "_uid": "df29859a-bf63-4964-ab75-eb2a06238cf7",
+            "_uid": "0c8c8600-5a64-48c8-aa37-55f77c300dbc",
             "body": [
               {
-                "_uid": "225f5193-4174-4ca4-9ef4-2dfee5152720",
+                "_uid": "869ea823-9c8f-4ac7-b663-35f6c36eec84",
                 "value": "Mail",
                 "component": "_table_col"
               },
               {
-                "_uid": "4b968bce-66eb-47f2-95ac-c198ec5f176c",
-                "value": "antaresrvish@gmail.com",
+                "_uid": "6dcabb14-3b3e-47eb-a53c-d0248a281a49",
+                "value": "johndoe@gmail.com",
                 "component": "_table_col"
               },
               {
-                "_uid": "82f5eaf4-1ea0-48b9-b888-44762fab8d98",
-                "value": "mailto:antaresrvish@gmail.com",
+                "_uid": "170246ae-dfa2-4bbc-9839-4f5251b1d7d3",
+                "value": "mailto:test@gmail.com",
                 "component": "_table_col"
               },
               {
-                "_uid": "7d9b2080-1dbe-4bb8-8864-f8363fc57691",
+                "_uid": "55db7aec-22e9-460b-8704-73d9ee74068f",
                 "value": "gmail",
                 "component": "_table_col"
               }
@@ -260,22 +260,22 @@
         ],
         "thead": [
           {
-            "_uid": "014726a9-b703-4cdf-95a0-d6dbeaf7db66",
+            "_uid": "ba6ff088-f01b-4ae2-b7b3-5e59e98bdcad",
             "value": "title",
             "component": "_table_head"
           },
           {
-            "_uid": "b6005111-9253-4a9d-b72d-803d1893a74e",
+            "_uid": "679839b6-d9f6-41c0-bfd1-49ba0d11259b",
             "value": "tag",
             "component": "_table_head"
           },
           {
-            "_uid": "4801e3e2-83d1-47de-9254-8c2a12bd0bdf",
+            "_uid": "8d47febe-110e-4c2c-93f3-9a6763f4e971",
             "value": "link",
             "component": "_table_head"
           },
           {
-            "_uid": "3275d356-a24e-4fe7-bfa2-bc9e309a5a95",
+            "_uid": "a3b7962a-8a86-4a99-9714-622ad7b1eae8",
             "value": "icon",
             "component": "_table_head"
           }
@@ -284,17 +284,17 @@
       },
       "component": "Connect"
     },
-    "component_id": 65620909931364,
-    "space_id": 285533317819926,
-    "created_at": "2025-07-13T11:27:53.070Z",
-    "updated_at": "2025-07-15T18:20:09.826Z",
+    "component_id": 68553464288767,
+    "space_id": 285759501662216,
+    "created_at": "2025-07-13T17:04:46.266Z",
+    "updated_at": "2025-07-16T15:38:11.755Z",
     "image": "",
     "color": "",
     "icon": "",
     "description": ""
   },
   {
-    "id": 68469663957140,
+    "id": 68553466945949,
     "name": "menu",
     "preset": {
       "_uid": "0b1f1442-7950-4734-b723-a587361f56c8",
@@ -427,17 +427,36 @@
       },
       "component": "Menu"
     },
-    "component_id": 66420357804858,
-    "space_id": 285533317819926,
-    "created_at": "2025-07-13T11:23:46.551Z",
-    "updated_at": "2025-07-15T18:19:28.577Z",
+    "component_id": 68553461351933,
+    "space_id": 285759501662216,
+    "created_at": "2025-07-13T17:04:46.265Z",
+    "updated_at": "2025-07-15T18:21:24.738Z",
     "image": "",
     "color": "#dfe3e8",
     "icon": "",
     "description": "Preset data fro menu"
   },
   {
-    "id": 68471598010523,
+    "id": 69591696293748,
+    "name": "meta",
+    "preset": {
+      "_uid": "3dd0a4f6-e58b-4856-9317-05fb7ed982db",
+      "title": "next.js portfolio",
+      "favicon": "https://img.icons8.com/fluent-systems-filled/512/nextjs.png",
+      "component": "meta",
+      "description": "an example description"
+    },
+    "component_id": 69591160822779,
+    "space_id": 285759501662216,
+    "created_at": "2025-07-16T15:29:20.225Z",
+    "updated_at": "2025-07-16T15:29:20.225Z",
+    "image": "",
+    "color": "",
+    "icon": "",
+    "description": ""
+  },
+  {
+    "id": 68553470427556,
     "name": "profile",
     "preset": {
       "_uid": "6ffa249d-0573-4b85-ad18-0cb1939a6383",
@@ -485,17 +504,17 @@
       },
       "component": "Profile"
     },
-    "component_id": 64935881646761,
-    "space_id": 285533317819926,
-    "created_at": "2025-07-13T11:31:38.732Z",
-    "updated_at": "2025-07-13T11:31:38.732Z",
+    "component_id": 68553466955267,
+    "space_id": 285759501662216,
+    "created_at": "2025-07-13T17:04:47.115Z",
+    "updated_at": "2025-07-13T17:04:47.115Z",
     "image": "",
     "color": "",
     "icon": "",
     "description": ""
   },
   {
-    "id": 68471121281177,
+    "id": 68553467113888,
     "name": "project",
     "preset": {
       "_uid": "f88d896e-7079-4d0f-a05c-6c771ee9ba24",
@@ -719,17 +738,17 @@
       },
       "component": "Project"
     },
-    "component_id": 65283787981364,
-    "space_id": 285533317819926,
-    "created_at": "2025-07-13T11:29:42.342Z",
-    "updated_at": "2025-07-15T18:19:15.407Z",
+    "component_id": 68553466615298,
+    "space_id": 285759501662216,
+    "created_at": "2025-07-13T17:04:46.306Z",
+    "updated_at": "2025-07-15T18:21:25.927Z",
     "image": "",
     "color": "",
     "icon": "",
     "description": ""
   },
   {
-    "id": 68471037149336,
+    "id": 68553467273633,
     "name": "services",
     "preset": {
       "_uid": "d291b215-2162-4893-b110-f901a28cc8e5",
@@ -834,38 +853,38 @@
       "emailLink": "test@gmail.com",
       "bookCallLink": "#"
     },
-    "component_id": 65613666020191,
-    "space_id": 285533317819926,
-    "created_at": "2025-07-13T11:29:21.804Z",
-    "updated_at": "2025-07-13T11:29:21.804Z",
+    "component_id": 68553461818878,
+    "space_id": 285759501662216,
+    "created_at": "2025-07-13T17:04:46.345Z",
+    "updated_at": "2025-07-13T17:04:46.345Z",
     "image": "",
     "color": "",
     "icon": "",
     "description": ""
   },
   {
-    "id": 68471389544602,
+    "id": 68553470063011,
     "name": "social",
     "preset": {
-      "_uid": "39f56d57-5a06-4fb1-85e5-6c55e34a436e",
+      "_uid": "e1217143-6b6b-4124-9893-ca991a67ac9f",
       "component": "Social",
       "socialLinks": {
         "tbody": [
           {
-            "_uid": "260aef76-03bd-42e8-8039-8bdd176a6361",
+            "_uid": "d49f94a5-8926-43c3-b228-07c3c508ad28",
             "body": [
               {
-                "_uid": "9e724641-4706-4cdd-837a-a1347c1ce7b5",
+                "_uid": "dcbde229-593e-4bd5-a7fa-ffab6413061c",
                 "value": "Github",
                 "component": "_table_col"
               },
               {
-                "_uid": "76ea7977-8334-447e-b9c4-ec0027cace17",
-                "value": "https://www.github.com/antaresrvish",
+                "_uid": "25357ca9-7b79-48c6-b48b-f0b1145bdd00",
+                "value": "https://www.github.com/te",
                 "component": "_table_col"
               },
               {
-                "_uid": "d68dd568-a9df-4a72-8d8a-ba1a29ca1c15",
+                "_uid": "0bf8a4d7-88f3-4585-bde0-6380010b2bbb",
                 "value": "github",
                 "component": "_table_col"
               }
@@ -873,20 +892,20 @@
             "component": "_table_row"
           },
           {
-            "_uid": "8e81cfbe-d006-4d4c-bf57-bfd6bccd9c50",
+            "_uid": "7efac296-031f-47f2-82b0-dbf9f67b55d2",
             "body": [
               {
-                "_uid": "8d092cb4-db95-4698-b3b2-8fe6ac568d3c",
+                "_uid": "4d48979b-50a9-484a-8338-dab4ac42a5e8",
                 "value": "Linkedin",
                 "component": "_table_col"
               },
               {
-                "_uid": "309b4c4a-bb36-408c-a0bb-97d939af6d98",
-                "value": "https://www.linkedin.com/in/antaresrvish",
+                "_uid": "eb33649c-c792-4a39-9fa5-81fde4395ca1",
+                "value": "https://www.linkedin.com/in/te",
                 "component": "_table_col"
               },
               {
-                "_uid": "29c07c99-4636-4c07-aed8-28fb1d134441",
+                "_uid": "95d2284e-5ab5-4f6a-bd27-2a55e41af8c7",
                 "value": "linkedin",
                 "component": "_table_col"
               }
@@ -894,20 +913,20 @@
             "component": "_table_row"
           },
           {
-            "_uid": "f4908f2e-93ce-4aae-b2f7-9b9f661d6a02",
+            "_uid": "ecf2fa0b-659c-4b62-9761-a0c1cba0f8a2",
             "body": [
               {
-                "_uid": "e0d606f0-199e-4243-a77e-79566f3658e6",
+                "_uid": "b0549c54-923f-47c2-9657-309b93af843e",
                 "value": "X",
                 "component": "_table_col"
               },
               {
-                "_uid": "b54c47e6-8256-4958-918a-0b7930430184",
-                "value": "https://x.com/antaresrvish",
+                "_uid": "f50d51e9-f8fa-4432-98dd-c12797766997",
+                "value": "https://x.com/te",
                 "component": "_table_col"
               },
               {
-                "_uid": "bb8be4f5-1d0c-4e6e-a80a-5da9fd531536",
+                "_uid": "8870f6f5-7125-400b-8317-c374e71c2f01",
                 "value": "x",
                 "component": "_table_col"
               }
@@ -915,20 +934,20 @@
             "component": "_table_row"
           },
           {
-            "_uid": "fa840122-8ab9-4e2f-8dc3-0480d7fc3c8a",
+            "_uid": "9d8f15e7-25fd-496b-b714-1d62eb4b784a",
             "body": [
               {
-                "_uid": "d02ee49f-821b-462c-ac8b-12cb39b8309f",
+                "_uid": "ba6d28e3-94ad-4fac-9258-dd26bff19241",
                 "value": "Youtube",
                 "component": "_table_col"
               },
               {
-                "_uid": "b2f3a55e-71cd-46a9-9438-445098d5aa30",
-                "value": "https://www.youtube.com/@antaresrvish",
+                "_uid": "8f827a85-16dd-427b-8cf7-45240ff198bd",
+                "value": "https://www.youtube.com/@te",
                 "component": "_table_col"
               },
               {
-                "_uid": "014de364-46f4-448d-a2fa-82e67f73bb2e",
+                "_uid": "b372e2cf-370a-4814-8549-5d2a0c53fde8",
                 "value": "youtube",
                 "component": "_table_col"
               }
@@ -936,20 +955,20 @@
             "component": "_table_row"
           },
           {
-            "_uid": "dae4995b-8883-4174-8c40-ccd88f1fae99",
+            "_uid": "5d2f6227-88c4-4e09-bfae-8dd5c976bf0a",
             "body": [
               {
-                "_uid": "29817434-1f18-45b5-9a6c-d70a3aee570d",
+                "_uid": "db12c906-79e9-412a-8c93-71cdd06cc59f",
                 "value": "Mail",
                 "component": "_table_col"
               },
               {
-                "_uid": "cd2adafe-aeab-4bbf-a6df-6123521261f9",
-                "value": "mailto:antaresrvish@gmail.com",
+                "_uid": "e2bf49b4-4165-4be5-be86-7cac0b09f118",
+                "value": "mailto:te@gmail.com",
                 "component": "_table_col"
               },
               {
-                "_uid": "a03d5d3d-75e4-4b4b-a432-9f9cc33c08bb",
+                "_uid": "3b45d185-857f-4bbe-a016-d5ae70f8bb46",
                 "value": "gmail",
                 "component": "_table_col"
               }
@@ -959,17 +978,17 @@
         ],
         "thead": [
           {
-            "_uid": "466788b1-909c-48ef-92de-931685937fcf",
+            "_uid": "41d4ca2e-67af-493c-8d02-57f3a35e9dbe",
             "value": "tooltip",
             "component": "_table_head"
           },
           {
-            "_uid": "35dd2701-9c4e-49c6-bea0-76614f590b3a",
+            "_uid": "867cfecf-cd6d-449f-9075-1434b6d681ba",
             "value": "link",
             "component": "_table_head"
           },
           {
-            "_uid": "fe3a13c8-3d3f-4124-8554-208fa888da2d",
+            "_uid": "6b0c40f3-b84e-4c9a-bb35-76118e1ef71f",
             "value": "icon",
             "component": "_table_head"
           }
@@ -977,38 +996,38 @@
         "fieldtype": "table"
       }
     },
-    "component_id": 65037241518437,
-    "space_id": 285533317819926,
-    "created_at": "2025-07-13T11:30:47.837Z",
-    "updated_at": "2025-07-15T18:19:50.540Z",
+    "component_id": 68553464768000,
+    "space_id": 285759501662216,
+    "created_at": "2025-07-13T17:04:47.026Z",
+    "updated_at": "2025-07-16T15:38:35.519Z",
     "image": "",
     "color": "",
     "icon": "",
     "description": ""
   },
   {
-    "id": 68470785216662,
+    "id": 68553467425186,
     "name": "techstack",
     "preset": {
-      "_uid": "297ef2b9-24cd-49ac-90a2-70f7e4b06b9d",
+      "_uid": "9cb21df2-1268-46a0-8b8d-befdfcfcc9ce",
       "component": "Tech Stack",
       "tech_stack": {
         "tbody": [
           {
-            "_uid": "a0a2946b-1fcb-452a-a129-7019f7bbf549",
+            "_uid": "bdea76e4-d295-4290-a1cf-ec9480e9fb8b",
             "body": [
               {
-                "_uid": "f1da8bf3-3343-47c3-8c73-295e9f141e58",
+                "_uid": "fe62dc88-82ae-474e-9784-dbc042f6921d",
                 "value": "Rust",
                 "component": "_table_col"
               },
               {
-                "_uid": "d9e026a0-adb3-4249-915d-5f395fce0948",
-                "value": "https://www.rust-lang.org/logos/rust-logo-512x512.png",
+                "_uid": "caf9e8d5-db72-4b7f-9fa7-de8761c8edcc",
+                "value": "rust",
                 "component": "_table_col"
               },
               {
-                "_uid": "ee966daf-2e29-432b-b47c-21c43d99840f",
+                "_uid": "1c15dace-2e87-469b-8284-3555a137a6a8",
                 "value": "https://www.rust-lang.org",
                 "component": "_table_col"
               }
@@ -1016,20 +1035,20 @@
             "component": "_table_row"
           },
           {
-            "_uid": "29b24a16-5944-4814-a833-820368feae8a",
+            "_uid": "be84e5e4-7551-4a65-a03f-3159a56a74d2",
             "body": [
               {
-                "_uid": "76e18715-3ce5-4527-9adb-8a15aeb6421e",
+                "_uid": "748889ee-880d-4a30-8379-03acb83483d6",
                 "value": "TypeScript",
                 "component": "_table_col"
               },
               {
-                "_uid": "7c37cd3f-e3c0-4298-9f05-0a1ad3516fd4",
-                "value": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+                "_uid": "812e9fd7-84d4-46b9-b309-c996076dcc8e",
+                "value": "typescript-icon",
                 "component": "_table_col"
               },
               {
-                "_uid": "732beee6-2e1b-4580-9f29-6ed12aba7ffe",
+                "_uid": "46332ee1-3cb6-41a2-a5f8-3909b56a6d0a",
                 "value": "https://www.typescriptlang.org",
                 "component": "_table_col"
               }
@@ -1037,20 +1056,20 @@
             "component": "_table_row"
           },
           {
-            "_uid": "56dc2e03-fb17-4161-889d-5dcfa4254b54",
+            "_uid": "39fc5e1a-2516-464d-8038-e1c6634ae88b",
             "body": [
               {
-                "_uid": "854c5a9e-4d77-46b9-bc25-dd36623277a2",
+                "_uid": "6c2ed17a-d87c-43f5-a683-73714d6f2d3d",
                 "value": "Java",
                 "component": "_table_col"
               },
               {
-                "_uid": "abc57d49-cf25-41ae-b831-876408765876",
-                "value": "https://cdn-icons-png.flaticon.com/512/226/226777.png",
+                "_uid": "cfb92d9f-b070-4866-879b-0a7de36fe900",
+                "value": "java",
                 "component": "_table_col"
               },
               {
-                "_uid": "6dfd9b75-3fbe-4f1c-a398-03b6f4318012",
+                "_uid": "df89df37-dd71-47ec-8bf4-7aefe5aae785",
                 "value": "https://www.java.com",
                 "component": "_table_col"
               }
@@ -1058,20 +1077,20 @@
             "component": "_table_row"
           },
           {
-            "_uid": "8f4e065d-ba8c-4a83-bffe-4533d1557ed2",
+            "_uid": "2c0884d6-f243-4555-8f3f-26299483a4d3",
             "body": [
               {
-                "_uid": "ff7688db-0c72-4586-902a-2a863fb3990e",
+                "_uid": "95e08eae-b13f-4049-acaf-1333941ba363",
                 "value": "C#",
                 "component": "_table_col"
               },
               {
-                "_uid": "7d5728e0-ad84-45cc-b3d7-93b8d0f1526d",
-                "value": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/C_Sharp_Logo_2023.svg/1200px-C_Sharp_Logo_2023.svg.png",
+                "_uid": "a8783374-01ea-497e-85c1-0ec173ae026d",
+                "value": "c-sharp",
                 "component": "_table_col"
               },
               {
-                "_uid": "534bfd68-f290-4e27-86fd-df31f0fca188",
+                "_uid": "c31ca23f-c52d-4668-b6bd-11d07ab61829",
                 "value": "https://learn.microsoft.com/tr-tr/dotnet/csharp/",
                 "component": "_table_col"
               }
@@ -1079,20 +1098,20 @@
             "component": "_table_row"
           },
           {
-            "_uid": "24cc621f-08f8-49f2-9aca-6ac1bda0b9c7",
+            "_uid": "df4b41d1-2329-459c-978e-d11e3338779b",
             "body": [
               {
-                "_uid": "be3c2be3-8119-410e-ae94-b06e3c9792e1",
+                "_uid": "e8c32d4c-c222-4fef-a494-c8cdb3e1c5ca",
                 "value": "Node.js",
                 "component": "_table_col"
               },
               {
-                "_uid": "7d12c931-a1ad-4b0b-b253-659e9dacb3f1",
-                "value": "https://images.seeklogo.com/logo-png/27/1/node-js-logo-png_seeklogo-273749.png",
+                "_uid": "18e048dd-203e-45a6-afcd-6159cee4cac6",
+                "value": "nodejs-icon",
                 "component": "_table_col"
               },
               {
-                "_uid": "627962db-827f-4360-87a8-ea91c076f167",
+                "_uid": "83e25f6b-6004-4ba2-96a5-f73cf04bbf9a",
                 "value": "https://www.nodejs.org",
                 "component": "_table_col"
               }
@@ -1100,20 +1119,20 @@
             "component": "_table_row"
           },
           {
-            "_uid": "88d85c13-d198-4c8f-baa8-0d7606a13493",
+            "_uid": "4b5f9afd-ab81-4b5a-bb6b-c264ff2e7c56",
             "body": [
               {
-                "_uid": "0b4b4799-a1fb-4fb8-bcb4-c65a17c171a5",
+                "_uid": "5e5a3b56-57ea-4dfb-9cab-2b3b44910746",
                 "value": "Express.js",
                 "component": "_table_col"
               },
               {
-                "_uid": "c8e4ae83-6c4c-472d-a2c8-bbf980532b08",
-                "value": "https://images.seeklogo.com/logo-png/27/1/node-js-logo-png_seeklogo-273749.png",
+                "_uid": "b575e362-ce05-4cc7-8537-633593123f1c",
+                "value": "nodejs-icon",
                 "component": "_table_col"
               },
               {
-                "_uid": "ac66c243-4585-41b5-a4d9-811cf5483461",
+                "_uid": "04aadb58-3218-4412-9df5-b1c10cf6e997",
                 "value": "https://expressjs.com",
                 "component": "_table_col"
               }
@@ -1121,20 +1140,20 @@
             "component": "_table_row"
           },
           {
-            "_uid": "8bf710ea-0804-4b46-98e4-5de8390401a8",
+            "_uid": "89ea0e53-871e-4b69-976b-4f406c846142",
             "body": [
               {
-                "_uid": "37ee0dd8-92ef-49e7-ac9a-2fe191be7de3",
+                "_uid": "7c12e862-1550-4b4d-9f31-c818746f1961",
                 "value": "Fastify.js",
                 "component": "_table_col"
               },
               {
-                "_uid": "081fdee2-a3ab-4017-b655-5bc869ab64ef",
-                "value": "https://pbs.twimg.com/profile_images/970652657231847424/mWKpZoM4_400x400.jpg",
+                "_uid": "fb255de9-bf96-4f9e-b94d-6c13343e45a0",
+                "value": "fastify-icon",
                 "component": "_table_col"
               },
               {
-                "_uid": "80305e77-9d6b-474c-8176-35717d02ea1f",
+                "_uid": "c06a750d-400e-45ae-bba0-1f416ea9d446",
                 "value": "https://www.fastify.io",
                 "component": "_table_col"
               }
@@ -1142,20 +1161,20 @@
             "component": "_table_row"
           },
           {
-            "_uid": "a8777f69-2b32-4d26-8839-584e79434b79",
+            "_uid": "bb688d7a-c3c7-4e1c-bd2b-9bb242560103",
             "body": [
               {
-                "_uid": "0ddcebe1-cb48-4141-a730-a974ee304e35",
+                "_uid": "00040e82-3edd-428e-be10-ac9718957e1a",
                 "value": "Assembly",
                 "component": "_table_col"
               },
               {
-                "_uid": "4454b3ff-f7b3-48d6-8662-c2a9181e9394",
-                "value": "https://user-images.githubusercontent.com/103866722/194773833-8571f323-4fa8-4036-a51c-57b9d29c683b.svg",
+                "_uid": "429adc71-9350-49ae-9326-4593d21cae84",
+                "value": "nasm",
                 "component": "_table_col"
               },
               {
-                "_uid": "d7fbc174-72c1-4265-96bd-a0a80bd74726",
+                "_uid": "e1e5190d-5ac0-40ec-a2a1-2f58181e919b",
                 "value": "#",
                 "component": "_table_col"
               }
@@ -1163,20 +1182,20 @@
             "component": "_table_row"
           },
           {
-            "_uid": "7b3d8c4b-ebfb-4957-8327-9694c1d619cc",
+            "_uid": "8e29d943-d796-4e27-a368-6e43981cecf2",
             "body": [
               {
-                "_uid": "c88e7e8d-7346-479d-b11d-6e1fb2599e29",
+                "_uid": "83b7a1d2-9130-458c-a0b6-fc6ea8349dd2",
                 "value": "Python",
                 "component": "_table_col"
               },
               {
-                "_uid": "2c70e408-2e82-4b82-8433-db1c3b3adb2e",
-                "value": "https://images.icon-icons.com/2699/PNG/512/python_logo_icon_168886.png",
+                "_uid": "229d0894-f23b-485c-ae98-6c92677bf151",
+                "value": "python",
                 "component": "_table_col"
               },
               {
-                "_uid": "7a3adabf-a021-4214-894a-6065b7ce925f",
+                "_uid": "5315605f-fe44-4c14-bf32-8d9daeb4f072",
                 "value": "https://www.python.org",
                 "component": "_table_col"
               }
@@ -1186,17 +1205,17 @@
         ],
         "thead": [
           {
-            "_uid": "62d007f6-8733-4f39-98fd-468b2aee109b",
+            "_uid": "49f15d15-7b8c-4db1-9623-330bfefdabd8",
             "value": "title",
             "component": "_table_head"
           },
           {
-            "_uid": "dbd8c345-a966-44d5-b000-450606ff0219",
-            "value": "photoUrl",
+            "_uid": "db7a4758-d757-44c8-aa11-be163bbf02ce",
+            "value": "icon",
             "component": "_table_head"
           },
           {
-            "_uid": "078d4b79-df38-4469-95b3-c1db61712b19",
+            "_uid": "e1959687-84b3-417e-8ed7-06529179d840",
             "value": "url",
             "component": "_table_head"
           }
@@ -1204,10 +1223,10 @@
         "fieldtype": "table"
       }
     },
-    "component_id": 65619290004323,
-    "space_id": 285533317819926,
-    "created_at": "2025-07-13T11:28:20.296Z",
-    "updated_at": "2025-07-13T11:28:20.296Z",
+    "component_id": 68553464768001,
+    "space_id": 285759501662216,
+    "created_at": "2025-07-13T17:04:46.382Z",
+    "updated_at": "2025-07-16T15:37:29.078Z",
     "image": "",
     "color": "",
     "icon": "",

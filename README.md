@@ -8,7 +8,7 @@ A modern, dynamic portfolio website built with [Next.js](https://nextjs.org) and
 - **CMS**: Storyblok
 - **Styling**: Tailwind CSS v4 with PostCSS
 - **Language**: TypeScript
-- **Icons**: React Icons
+- **Icons**: Iconify
 - **Build Tool**: Turbopack (Next.js)
 
 ## 📖 Documentation
@@ -44,8 +44,6 @@ src/
 - `npm run build` - Create production build
 - `npm run start` - Start production server
 - `npm run storyblok:push` - Push components to Storyblok
-
-
 
 ## 🤝 Contributing
 
