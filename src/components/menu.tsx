@@ -28,7 +28,7 @@ export default function Menu({ delay = 1250, className = "", menuData }: MenuPro
                                 relative z-10 mr-1 sm:mr-2 px-2 mb-1 sm:px-3 py-1 text-xs sm:text-sm rounded-full 
                                 transition-colors duration-300 ease-out hover:cursor-pointer whitespace-nowrap
                                 ${activeItem === item.id
-                                    ? 'text-white font-medium'
+                                    ? 'text-green-200/90 font-medium'
                                     : 'text-gray-600 hover:text-gray-90'
                                 }
                             `}

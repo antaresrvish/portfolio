@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
-.body {
-    background-color: #F9F9F9;
+@theme {
+    --color-primary: color-mix(in oklab, var(--color-green-200) /* oklch(92.5% 0.084 155.995) = #b9f8cf */ 90%, transparent);
+    --color-secondary: color-mix(in oklab, var(--color-green-200) /* oklch(92.5% 0.084 155.995) = #b9f8cf */ 50%, transparent);
+    --color-paragraph: var(--color-gray-300);
+    --color-background: color-mix(in oklab, var(--color-green-200) /* oklch(92.5% 0.084 155.995) = #b9f8cf */ 8%, transparent);
+    --color-background-secondary: color-mix(in oklab, var(--color-green-900) /* oklch(39.3% 0.095 152.535) = #0d542b */ 20%, transparent);
+    --color-card-border: color-mix(in oklab, var(--color-green-900) /* oklch(39.3% 0.095 152.535) = #0d542b */ 20%, transparent);
+    --color-button-border: color-mix(in oklab, var(--color-green-200) /* oklch(92.5% 0.084 155.995) = #b9f8cf */ 50%, transparent);
+}
+
+body {
+    background-color: #000;
 }

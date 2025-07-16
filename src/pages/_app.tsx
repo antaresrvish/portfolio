@@ -3,39 +3,29 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import { IMeta } from "@/types/components/meta";
 
-const sectionTitles = {
-  projects: 'Projects - Portfolio',
-  services: 'Services - Portfolio', 
-  clients: 'Clients - Portfolio',
-  techstack: 'Tech Stack - Portfolio',
-  connect: 'Connect - Portfolio'
-} as const;
+interface PageProps {
+  metaData?: IMeta;
+  [key: string]: any;
+}
 
-const sectionDescriptions = {
-  projects: 'Explore my latest projects and development work',
-  services: 'Professional services and expertise I offer',
-  clients: 'Companies and clients I have worked with',
-  techstack: 'Technologies and tools I work with',
-  connect: 'Get in touch for collaborations and opportunities'
-} as const;
+const defaultTitle = "Portfolio";
+const defaultDescription = "Professional portfolio showcasing projects, services, and expertise";
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }: AppProps & { pageProps: PageProps }) {
   const router = useRouter();
-  const [pageTitle, setPageTitle] = useState('Portfolio');
-  const [pageDescription, setPageDescription] = useState('Professional portfolio showcasing projects, services, and expertise');
+  const [pageTitle, setPageTitle] = useState(defaultTitle);
+  const [pageDescription, setPageDescription] = useState(defaultDescription);
+  const [favicon, setFavicon] = useState('/favicon.ico');
 
   useEffect(() => {
-    const section = router.query.section as keyof typeof sectionTitles;
-    
-    if (section && sectionTitles[section]) {
-      setPageTitle(sectionTitles[section]);
-      setPageDescription(sectionDescriptions[section]);
-    } else {
-      setPageTitle('Portfolio');
-      setPageDescription('Professional portfolio showcasing projects, services, and expertise');
+    if (pageProps.metaData) {
+      setPageTitle(pageProps.metaData.title || defaultTitle);
+      setPageDescription(pageProps.metaData.description || defaultDescription);
+      setFavicon(pageProps.metaData.favicon || '/favicon.ico');
     }
-  }, [router.query.section]);
+  }, [pageProps.metaData]);
 
   return (
     <>
@@ -43,7 +33,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href={favicon} />
       </Head>
       <Component {...pageProps} />
     </>

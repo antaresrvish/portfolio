@@ -137,17 +137,17 @@
               },
               {
                 "_uid": "b02280fd-6241-487b-85cd-87689a63f4d7",
-                "value": "@test",
+                "value": "@antaresrvish",
                 "component": "_table_col"
               },
               {
                 "_uid": "68800318-e541-445f-84f7-51463ac97276",
-                "value": "https://www.github.com/test",
+                "value": "https://www.github.com/antaresrvish",
                 "component": "_table_col"
               },
               {
                 "_uid": "acb0b1c7-49c6-48a1-81fd-7e93ffdfb68a",
-                "value": "Github",
+                "value": "github",
                 "component": "_table_col"
               }
             ],
@@ -163,17 +163,43 @@
               },
               {
                 "_uid": "e53e99a6-5f66-45ef-b8d7-b227e36cbb16",
-                "value": "in/test",
+                "value": "in/antaresrvish",
                 "component": "_table_col"
               },
               {
                 "_uid": "039017b6-f03b-4ea6-bcb1-5f7768c11b4e",
-                "value": "https://www.linkedin.com/in/test",
+                "value": "https://www.linkedin.com/in/antaresrvish",
                 "component": "_table_col"
               },
               {
                 "_uid": "7c98719d-014f-4600-b9c0-74887be5c091",
-                "value": "Linkedin",
+                "value": "linkedin",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "_uid": "91b231af-c7ab-422f-8c70-89b97025e539",
+            "body": [
+              {
+                "_uid": "636551b8-3d12-4343-ac07-37910ae07ccb",
+                "value": "X",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "8c12b5ff-8b44-49fb-8e0a-1496837d6dba",
+                "value": "@antaresrvish",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "a7e9752e-bc79-4eec-ad67-d4f6cc16c99b",
+                "value": "https://x.com/antaresrvish",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "9245646b-1551-44a3-a2a2-3c988b8ab890",
+                "value": "x",
                 "component": "_table_col"
               }
             ],
@@ -189,17 +215,17 @@
               },
               {
                 "_uid": "b536f869-1c95-4f5f-80a6-c532012900e2",
-                "value": "@test",
+                "value": "@antaresrvish",
                 "component": "_table_col"
               },
               {
                 "_uid": "3a00b81a-ea9a-4a3a-9cec-a9a2855724b2",
-                "value": "https://www.youtube.com/@test",
+                "value": "https://www.youtube.com/@antaresrvish",
                 "component": "_table_col"
               },
               {
                 "_uid": "d302d3d3-16cb-4bc7-b692-f5d6f6edab9f",
-                "value": "Youtube",
+                "value": "youtube",
                 "component": "_table_col"
               }
             ],
@@ -215,17 +241,17 @@
               },
               {
                 "_uid": "4b968bce-66eb-47f2-95ac-c198ec5f176c",
-                "value": "test@gmail.com",
+                "value": "antaresrvish@gmail.com",
                 "component": "_table_col"
               },
               {
                 "_uid": "82f5eaf4-1ea0-48b9-b888-44762fab8d98",
-                "value": "mailto:test@gmail.com",
+                "value": "mailto:antaresrvish@gmail.com",
                 "component": "_table_col"
               },
               {
                 "_uid": "7d9b2080-1dbe-4bb8-8864-f8363fc57691",
-                "value": "RegEnvelope",
+                "value": "gmail",
                 "component": "_table_col"
               }
             ],
@@ -261,7 +287,7 @@
     "component_id": 65620909931364,
     "space_id": 285533317819926,
     "created_at": "2025-07-13T11:27:53.070Z",
-    "updated_at": "2025-07-13T11:27:53.070Z",
+    "updated_at": "2025-07-15T18:20:09.826Z",
     "image": "",
     "color": "",
     "icon": "",
@@ -338,34 +364,42 @@
             "component": "_table_row"
           },
           {
+            "_uid": "5be2d266-3656-4d12-9de8-eb9df16a1654",
             "body": [
               {
-                "value": "client",
+                "_uid": "f8a61945-aa68-478d-be8d-20bf7e9c3976",
+                "value": "service",
                 "component": "_table_col"
               },
               {
-                "value": "Clients",
+                "_uid": "df3d8003-36e9-492c-9d24-fee03654955a",
+                "value": "Services",
                 "component": "_table_col"
               },
               {
-                "value": "Three",
+                "_uid": "b17edba9-bc7c-41f8-be50-85bd4feaacc2",
+                "value": "Two",
                 "component": "_table_col"
               }
             ],
             "component": "_table_row"
           },
           {
+            "_uid": "9ea19aa8-08cf-4723-a6e5-98be8fcffbd7",
             "body": [
               {
-                "value": "service",
+                "_uid": "607a1e2f-645c-4e79-a7c9-1611e6e4a241",
+                "value": "client",
                 "component": "_table_col"
               },
               {
-                "value": "Services",
+                "_uid": "17343a5b-f96e-4588-8f6c-c19a14f2f4d8",
+                "value": "Clients",
                 "component": "_table_col"
               },
               {
-                "value": "Two",
+                "_uid": "c42bf12e-9487-4ca8-bb62-7e634f9bc975",
+                "value": "Three",
                 "component": "_table_col"
               }
             ],
@@ -396,7 +430,7 @@
     "component_id": 66420357804858,
     "space_id": 285533317819926,
     "created_at": "2025-07-13T11:23:46.551Z",
-    "updated_at": "2025-07-13T11:27:07.277Z",
+    "updated_at": "2025-07-15T18:19:28.577Z",
     "image": "",
     "color": "#dfe3e8",
     "icon": "",
@@ -472,7 +506,7 @@
             "body": [
               {
                 "_uid": "0f6762c9-f821-411a-84a9-09996b4b9721",
-                "value": "https://www.rust-lang.org/logos/rust-logo-512x512.png",
+                "value": "rust",
                 "component": "_table_col"
               },
               {
@@ -492,7 +526,38 @@
               },
               {
                 "_uid": "4e30002c-00ec-4844-9738-1760b09e0603",
-                "value": "https://github.com/test/rust-kvm",
+                "value": "https://github.com/antaresrvish/rust-kvm",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "_uid": "d7fad77e-c3fb-42d9-8b8e-29f997229e7e",
+            "body": [
+              {
+                "_uid": "8c1ae27d-2b3b-45a7-9497-983d934f1a4c",
+                "value": "nextjs-icon",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "aa9abc93-396e-4fcd-a415-f929182651ef",
+                "value": "Portfolio",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "50097e03-7066-4f3d-ad0b-b3bf02a2a0d3",
+                "value": "Basic Next.JS portfolio website written in Typescript with Next.js",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "eb0ad6ec-46a1-4087-b546-c2049fa8691f",
+                "value": "https://opengraph.githubassets.com/44f89e7baa8e01e2db1cd9682a4e6543524ac9e7653f26c31a375318cd22373d/antaresrvish/portfolio",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "d58b9b7f-610e-401a-9a8a-7b900630cbf4",
+                "value": "https://github.com/antaresrvish/portfolio",
                 "component": "_table_col"
               }
             ],
@@ -503,7 +568,7 @@
             "body": [
               {
                 "_uid": "b60754e2-9022-45d2-9294-d31421a23ad5",
-                "value": "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg",
+                "value": "php",
                 "component": "_table_col"
               },
               {
@@ -523,7 +588,7 @@
               },
               {
                 "_uid": "232857ee-4a1f-443d-b461-d53ce2465edd",
-                "value": "https://github.com/test/know-ai",
+                "value": "https://github.com/Kirac-Borsa-Istanbul-MTAL/know-ai",
                 "component": "_table_col"
               }
             ],
@@ -534,7 +599,7 @@
             "body": [
               {
                 "_uid": "18150bf7-60bf-4c88-9494-d85d2e6cd2ba",
-                "value": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+                "value": "typescript-icon",
                 "component": "_table_col"
               },
               {
@@ -554,7 +619,69 @@
               },
               {
                 "_uid": "6e995335-039b-455b-9af2-dbd85ef734ad",
-                "value": "https://github.com/test/osilus-scraper",
+                "value": "https://github.com/mesa-osilus/osilus-scraper",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "_uid": "8654355e-d1ae-4e69-98e5-3d77870c3e0a",
+            "body": [
+              {
+                "_uid": "c5c30f0d-098a-4d97-9eee-27cb79a9fd26",
+                "value": "java",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "ddbc1e8b-8a59-4ba4-b2a6-b3fa1d3f1673",
+                "value": "Messager App",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "f64c9be6-fa7e-445f-8be0-d77189ccc5a6",
+                "value": "Messaging app written in Java with Android Studio and Firebase.",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "e9baba58-0360-4d49-a24c-8e1bc5e3f9d4",
+                "value": "https://opengraph.githubassets.com/ef740484476d822b8f6247b2a23d6a7ce92b5862dbe97f711c417356b659ad50/antaresrvish/messager-app",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "836a148d-a175-45ae-a730-b39cf79de0de",
+                "value": "https://github.com/antaresrvish/messager-app",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "_uid": "9e7ea777-d344-40ea-828c-f7c0748bb250",
+            "body": [
+              {
+                "_uid": "72990a3c-86d3-4165-b76c-545f141d56ac",
+                "value": "c",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "600755d0-a984-4dfb-9c56-c57443087391",
+                "value": "PIC Temperature Monitor",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "b883a6dc-9cd2-4f56-85d4-94c524c9e113",
+                "value": "Temperature monitoring with pic18f4550 microcontroller.",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "d37801fb-47cc-4e03-bddc-f48c3632ab44",
+                "value": "https://opengraph.githubassets.com/fd6d6c70f78e683441e7cc5b41c9d94c2ba588310ff518d36bcd8f67d9dd0253/antaresrvish/PIC18F4550_I2C_LCD_TEMP_MONITOR",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "665d7fff-b312-4a30-9146-827f843ec7bb",
+                "value": "https://github.com/antaresrvish/PIC18F4550_I2C_LCD_TEMP_MONITOR",
                 "component": "_table_col"
               }
             ],
@@ -564,7 +691,7 @@
         "thead": [
           {
             "_uid": "72c42a36-aecb-41d5-b05e-42d07a3e9799",
-            "value": "iconUrl",
+            "value": "icon",
             "component": "_table_head"
           },
           {
@@ -595,7 +722,7 @@
     "component_id": 65283787981364,
     "space_id": 285533317819926,
     "created_at": "2025-07-13T11:29:42.342Z",
-    "updated_at": "2025-07-13T11:30:22.534Z",
+    "updated_at": "2025-07-15T18:19:15.407Z",
     "image": "",
     "color": "",
     "icon": "",
@@ -734,12 +861,12 @@
               },
               {
                 "_uid": "76ea7977-8334-447e-b9c4-ec0027cace17",
-                "value": "https://www.github.com/test",
+                "value": "https://www.github.com/antaresrvish",
                 "component": "_table_col"
               },
               {
                 "_uid": "d68dd568-a9df-4a72-8d8a-ba1a29ca1c15",
-                "value": "Github",
+                "value": "github",
                 "component": "_table_col"
               }
             ],
@@ -755,12 +882,33 @@
               },
               {
                 "_uid": "309b4c4a-bb36-408c-a0bb-97d939af6d98",
-                "value": "https://www.linkedin.com/in/test",
+                "value": "https://www.linkedin.com/in/antaresrvish",
                 "component": "_table_col"
               },
               {
                 "_uid": "29c07c99-4636-4c07-aed8-28fb1d134441",
-                "value": "Linkedin",
+                "value": "linkedin",
+                "component": "_table_col"
+              }
+            ],
+            "component": "_table_row"
+          },
+          {
+            "_uid": "f4908f2e-93ce-4aae-b2f7-9b9f661d6a02",
+            "body": [
+              {
+                "_uid": "e0d606f0-199e-4243-a77e-79566f3658e6",
+                "value": "X",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "b54c47e6-8256-4958-918a-0b7930430184",
+                "value": "https://x.com/antaresrvish",
+                "component": "_table_col"
+              },
+              {
+                "_uid": "bb8be4f5-1d0c-4e6e-a80a-5da9fd531536",
+                "value": "x",
                 "component": "_table_col"
               }
             ],
@@ -776,12 +924,12 @@
               },
               {
                 "_uid": "b2f3a55e-71cd-46a9-9438-445098d5aa30",
-                "value": "https://www.youtube.com/@test",
+                "value": "https://www.youtube.com/@antaresrvish",
                 "component": "_table_col"
               },
               {
                 "_uid": "014de364-46f4-448d-a2fa-82e67f73bb2e",
-                "value": "Youtube",
+                "value": "youtube",
                 "component": "_table_col"
               }
             ],
@@ -797,12 +945,12 @@
               },
               {
                 "_uid": "cd2adafe-aeab-4bbf-a6df-6123521261f9",
-                "value": "mailto:test@gmail.com",
+                "value": "mailto:antaresrvish@gmail.com",
                 "component": "_table_col"
               },
               {
                 "_uid": "a03d5d3d-75e4-4b4b-a432-9f9cc33c08bb",
-                "value": "RegEnvelope",
+                "value": "gmail",
                 "component": "_table_col"
               }
             ],
@@ -832,7 +980,7 @@
     "component_id": 65037241518437,
     "space_id": 285533317819926,
     "created_at": "2025-07-13T11:30:47.837Z",
-    "updated_at": "2025-07-13T11:30:47.837Z",
+    "updated_at": "2025-07-15T18:19:50.540Z",
     "image": "",
     "color": "",
     "icon": "",

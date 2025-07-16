@@ -1,6 +1,6 @@
 interface IFourGrid {
     title: string;
-    photoUrl?: string;
+    icon: string;
     url: string;
 }
 

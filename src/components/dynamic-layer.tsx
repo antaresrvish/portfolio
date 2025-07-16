@@ -46,33 +46,27 @@ export default function DynamicLayer({ data, menuData }: IDynamicLayer) {
 
     const layerData = data[activeItem];
     const isFirstRender = !hasRenderedOnce;
-    const delay = isFirstRender ? 1.2 : 0;
+    const delay = isFirstRender ? 1.3 : 0;
 
     const containerVariants = {
         hidden: {
             opacity: 0,
-            filter: "blur(10px)",
-            scale: 0.95,
-            y: 20,
+            y: 30,
         },
         visible: {
             opacity: 1,
-            filter: "blur(0px)",
-            scale: 1,
             y: 0,
             transition: {
-                duration: isFirstRender ? 0.8 : 0.25,
+                duration: isFirstRender ? 0.5 : 0.1,
                 delay,
                 ease: "easeOut" as const,
             }
         },
         exit: {
             opacity: 0,
-            filter: "blur(8px)",
-            scale: 0.98,
-            y: -10,
+            y: -20,
             transition: {
-                duration: 0.15,
+                duration: 0.1,
                 ease: "easeIn" as const
             }
         }
@@ -85,19 +79,8 @@ export default function DynamicLayer({ data, menuData }: IDynamicLayer) {
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"
-                exit="exit"
-                className="relative">
-                <motion.div
-                    initial={{ opacity: 0, filter: "blur(5px)", y: 10 }}
-                    animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
-                    exit={{ opacity: 0, filter: "blur(3px)", y: -5 }}
-                    transition={{
-                        duration: isFirstRender ? 0.6 : 0.2,
-                        delay: delay + (isFirstRender ? 0.3 : 0.05)
-                    }}
-                    className="relative z-10">
-                    <LayerComponent data={layerData} />
-                </motion.div>
+                exit="exit">
+                <LayerComponent data={layerData} />
             </motion.div>
         </AnimatePresence>
     );
