@@ -22,8 +22,17 @@ export interface Menu {
   [k: string]: unknown;
 }
 
+export interface Meta {
+  title?: string;
+  description?: string;
+  favicon?: string;
+  component: "meta";
+  _uid: string;
+  [k: string]: unknown;
+}
+
 export interface Page {
-  body?: (Client | Connect | Menu | Page | Profile | Project | Service | Social | TechStack)[];
+  body?: (Client | Connect | Menu | Meta | Page | Profile | Project | Service | Social | TechStack)[];
   component: "page";
   _uid: string;
   [k: string]: unknown;

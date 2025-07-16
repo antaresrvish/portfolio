@@ -18,6 +18,7 @@ import { IFive } from "@/types/components/layers/five";
 import { IFour } from "@/types/components/layers/four";
 import { IMenuItem } from "@/types/components/menu-item";
 import { ICard } from "@/types/components/templates/card";
+import { IMeta } from "@/types/components/meta";
 
 const geistSans = Outfit({
   variable: "--font-geist-sans",
@@ -33,8 +34,9 @@ interface HomeProps {
   layerFour: IFour;
   layerFive: IFive;
   menuData: IMenuItem;
+  metaData: IMeta;
 }
-export default function Home({ profileData, socialData, layerOne, layerTwo, layerThree, layerFour, layerFive, menuData }: HomeProps) {
+export default function Home({ profileData, socialData, layerOne, layerTwo, layerThree, layerFour, layerFive, menuData, metaData }: HomeProps) {
   
   const layerData: Record<string, any> = {};
   const componentToLayerMap: Record<string, any> = {

@@ -9,7 +9,8 @@ import { IThree } from "@/types/components/layers/three";
 import { IFour } from "@/types/components/layers/four";
 import { IFive } from "@/types/components/layers/five";
 import { IMenuItem } from "@/types/components/menu-item";
-import { Profile, Social, Project, Service, Client, TechStack, Connect, Menu } from "@/types/components/storyblok/space-types/storyblok-components";
+import { IMeta } from "@/types/components/meta";
+import { Profile, Social, Project, Service, Client, TechStack, Connect, Menu, Meta } from "@/types/components/storyblok/space-types/storyblok-components";
 
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -45,8 +46,9 @@ export const getStaticProps: GetStaticProps = async () => {
         let techStackData: IFour = [];
         let connectData: IFive = [];
         let menuData: IMenuItem = [];
+        let metaData: IMeta | null = null;
 
-        data.forEach((item: Profile | Social | Project | Service | Client | TechStack | Connect | Menu, index: number) => {
+        data.forEach((item: Profile | Social | Project | Service | Client | TechStack | Connect | Menu | Meta, index: number) => {
             if (!item || !item.component) {
                 return;
             }
@@ -195,6 +197,16 @@ export const getStaticProps: GetStaticProps = async () => {
 
                     break;
                 }
+                case "meta": {
+                    const metaItem = item as Meta;
+                    
+                    metaData = {
+                        title: metaItem.title || "Portfolio",
+                        description: metaItem.description || "Professional portfolio showcasing projects, services, and expertise",
+                        favicon: metaItem.favicon || "/favicon.ico"
+                    };
+                    break;
+                }
                 default: {
                     if (!profileData) {
                         profileData = {
@@ -240,6 +252,14 @@ export const getStaticProps: GetStaticProps = async () => {
                         menuData = [];
                     }
 
+                    if (!metaData) {
+                        metaData = {
+                            title: "Portfolio",
+                            description: "Professional portfolio showcasing projects, services, and expertise",
+                            favicon: "/favicon.ico"
+                        };
+                    }
+
                     break;
                 }
             }
@@ -256,7 +276,8 @@ export const getStaticProps: GetStaticProps = async () => {
                 layerThree: clientData,
                 layerFour: techStackData,
                 layerFive: connectData,
-                menuData: menuData
+                menuData: menuData,
+                metaData: metaData
             },
             revalidate: 3600
         };
@@ -285,7 +306,12 @@ export const getStaticProps: GetStaticProps = async () => {
                 layerThree: [],
                 layerFour: [],
                 layerFive: [],
-                menuData: []
+                menuData: [],
+                metaData: {
+                    title: "Portfolio - Error",
+                    description: "Failed to load portfolio data",
+                    favicon: "/favicon.ico"
+                }
             },
             revalidate: 60
         }
