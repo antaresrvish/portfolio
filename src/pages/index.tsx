@@ -56,13 +56,13 @@ export default function Home({ profileData, socialData, layerOne, layerTwo, laye
       }
     });
   }
-
+  console.log(layerData)
   return (
     <StoryblokProvider>
       <MenuProvider menuData={menuData}>
         <Background 
           useBeams={true}
-          useNoise={false}
+          useNoise={true}
           beamsProps={{
             beamWidth: 2,
             beamHeight: 30,
@@ -74,8 +74,8 @@ export default function Home({ profileData, socialData, layerOne, layerTwo, laye
             rotation: 145
           }}
           noiseProps={{
-            patternSize: 1,
-            patternAlpha: 20,
+            patternSize: 20,
+            patternAlpha: 10,
             patternRefreshInterval: 1
           }}
         />

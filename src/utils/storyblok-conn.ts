@@ -153,7 +153,7 @@ export const getStaticProps: GetStaticProps = async () => {
                             if (row.body && row.body.length > 0) {
                                 techStackData.push({
                                     title: row.body[0]?.value || "",
-                                    photoUrl: row.body[1]?.value || "",
+                                    icon: row.body[1]?.value || "",
                                     url: row.body[2]?.value || ""
                                 });
                             }
